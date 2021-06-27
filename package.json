@@ -1,0 +1,31 @@
+{
+  "name": "pmlf",
+  "version": "0.0.0",
+  "description": "Pedro Fonseca's portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMLF/PMLF.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "web",
+    "developer",
+    "football",
+    "linkedin",
+    "dev",
+    "github",
+    "cv",
+    "code"
+  ],
+  "author": "PMLF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PMLF/PMLF.github.io/issues"
+  },
+  "homepage": "https://github.com/PMLF/PMLF.github.io#readme"
+}
