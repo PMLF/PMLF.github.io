@@ -5,6 +5,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import Landing from "../Landing";
 
 export default function Routing() {
   return (
@@ -21,8 +22,8 @@ export default function Routing() {
         
         <Switch>
           {/*New routes here*/}
-          <Route path="/test">
-            Test
+          <Route path="/">
+            <Landing />
           </Route>
         </Switch>
       </div>

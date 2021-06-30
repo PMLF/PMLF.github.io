@@ -1,20 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import bgImg from '../../images/bg.png'
+import {darkTheme} from '../../themes'
 
-const SectionStyled = styled.section`
-    height: 100%;
-`
-
-const BgImage = styled.img`
-    height: 100%;
-    max-width:100%;
+const SectionStyled = styled('section')`
+    ${() => `
+        height: 900px;
+        background-color: ${darkTheme.colors.grey1};
+    ` }
 `
 
 export default function Landing() {
     return (
         <SectionStyled>
-            <BgImage src={bgImg} />
+            
         </SectionStyled>
     )
 }
