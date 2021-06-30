@@ -5,7 +5,7 @@ import {darkTheme} from '../../themes'
 const SectionStyled = styled('section')`
     ${() => `
         height: 900px;
-        background-color: ${darkTheme.colors.grey1};
+        background-color: ${darkTheme.colors.greyDark};
     ` }
 `
 
