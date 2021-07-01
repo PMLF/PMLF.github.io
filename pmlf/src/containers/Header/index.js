@@ -6,6 +6,9 @@ const NavStyled = styled('nav')`
     ${() => `
         background-color: ${darkTheme.colors.greyDarker};
         padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         ul {
             margin: 10px;
@@ -46,12 +49,10 @@ const NavStyled = styled('nav')`
     `}
 `
 
-export default function Header(props) {
+export default function Header({ children }) {
     return (
         <NavStyled>
-          <ul>
-            {props.children}
-          </ul>
+            {children}
         </NavStyled>
     )
 }

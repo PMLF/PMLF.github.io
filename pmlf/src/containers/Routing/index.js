@@ -6,17 +6,26 @@ import {
 } from "react-router-dom";
 import Landing from "../Landing";
 import Header from "../Header";
+
+// Buttons
+import NavBarButton from '../../components/NavBarButton'
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import CodeIcon from '@material-ui/icons/Code';
-import NavBarButton from '../../components/NavBarButton'
+
+// Signature
+import NavBarImg from "../../components/NavBarImg/NavBarImg";
+import Signature from '../../images/signature_white.svg'
 
 export default function Routing() {
   return (
     <Router>
       <div>
         <Header>
-          <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />
-          <NavBarButton link="/work" icon={CodeIcon} text="Work" />
+          <NavBarImg src={Signature} alt="Signature" />
+          <ul>
+            <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />
+            <NavBarButton link="/work" icon={CodeIcon} text="Work" />
+          </ul>
         </Header>
         
         <Switch>
