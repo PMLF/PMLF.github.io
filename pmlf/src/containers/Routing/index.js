@@ -17,13 +17,14 @@ import NavBarImg from "../../components/NavBarImg/NavBarImg";
 import Signature from '../../images/signature_white.svg'
 
 // Social media
-import { SvgIcon } from "@material-ui/core";
+import SocialMediaButton from "../../components/SocialMediaButton/SocialMediaButton";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import SpotifyIcon from '../../images/spotify.svg'
 import CvIcon from '../../images/cv_icon_white.svg'
+import CvDocument from '../../assets/CV_PEDROFONSECA_en_2021.pdf'
 
 export default function Routing() {
   return (
@@ -32,12 +33,45 @@ export default function Routing() {
         <Header>
           <div>
             <NavBarImg src={Signature} alt="Signature" />
-            <SvgIcon component={LinkedInIcon} />
-            <SvgIcon component={GitHubIcon} />
-            <SvgIcon component={AlternateEmailIcon} />
-            <SvgIcon component={InstagramIcon} />
-            <img src={SpotifyIcon} alt="Spotify icon" />
-            <img src={CvIcon} alt="CV icon" />
+            <SocialMediaButton
+              href="https://www.linkedin.com/in/pedromlfonseca/"
+              icon={LinkedInIcon}
+              colorArray={["#0E76A8", "#084561"]}
+              borderRadius="6px"
+            />
+            <SocialMediaButton
+              href="https://github.com/PMLF"
+              icon={GitHubIcon}
+              colorArray={["#0D2634", "#266F99"]}
+              borderRadius="50%"
+            />
+            <SocialMediaButton
+              href="mailto:pmlfonseca@outlook.com"
+              icon={AlternateEmailIcon}
+              colorArray={["#0F70D0", "#4FD8FF"]}
+              borderRadius="50%"
+            />
+            <SocialMediaButton
+              href="https://www.instagram.com/pmlfonseca/"
+              icon={InstagramIcon}
+              colorArray={["#3E6BC9", "#B63A9D", "#FC5245", "#FEDA55"]}
+              borderRadius="12px"
+            />
+            <SocialMediaButton
+              href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"
+              icon={SpotifyIcon}
+              colorArray={["#118A3D", "#118A3D", "#1A1414"]}
+              borderRadius="50%"
+              alt="Spotify link"
+            />
+            <SocialMediaButton
+              href={CvDocument}
+              icon={CvIcon}
+              colorArray={["#CD0001", "#CD4F44"]}
+              borderRadius="6px"
+              alt="CV download link"
+              download="CV_PEDROFONSECA_en_2021.pdf"
+            />
           </div>
           <ul>
             <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />

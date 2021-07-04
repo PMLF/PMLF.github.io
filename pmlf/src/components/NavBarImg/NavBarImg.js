@@ -8,6 +8,8 @@ const ImageStyled = styled('img')`
 
 export default function NavBarImg({ src, alt }) {
     return (
-        <ImageStyled src={src} alt={alt} />
+        <a href="/">
+            <ImageStyled src={src} alt={alt} />
+        </a>
     )
 }
