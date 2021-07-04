@@ -22,7 +22,6 @@ const NavStyled = styled('nav')`
                 list-style-type: none;
                 margin-left: 20px;
                 background-color: ${darkTheme.colors.greyMid};
-                padding: 5px 10px;
                 border-radius: 4px;
 
                 &:first-of-type {
@@ -39,6 +38,7 @@ const NavStyled = styled('nav')`
                     font-family: ${darkTheme.fontFamily.main};
                     display: flex;
                     align-items: center;
+                    padding: 5px 10px;
                     
                     svg {
                         margin-right: 8px;
