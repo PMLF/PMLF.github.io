@@ -35,29 +35,41 @@ const NavStyled = styled('nav')`
                     transition: 0.1s all;
                 }
             }
-            svg:first-of-type:hover {
-                background-image: linear-gradient(#0E76A8, #084561);
+            svg:first-of-type {
                 border-radius: 6px;
+                &:hover {
+                    background-image: linear-gradient(#0E76A8, #084561);
+                }
             }
-            svg:nth-of-type(2):hover {
-                background-image: linear-gradient(#0D2634, #266F99);
+            svg:nth-of-type(2) {
                 border-radius: 50%;
+                &:hover {
+                    background-image: linear-gradient(#0D2634, #266F99);
+                }
             }
-            svg:nth-of-type(3):hover {
-                background-image: linear-gradient(#0F70D0, #4FD8FF);
+            svg:nth-of-type(3) {
                 border-radius: 50%;
+                &:hover {
+                    background-image: linear-gradient(#0F70D0, #4FD8FF);
+                }
             }
-            svg:nth-of-type(4):hover {
-                background-image: linear-gradient(#3E6BC9, #B63A9D, #FC5245, #FEDA55);
+            svg:nth-of-type(4) {
                 border-radius: 12px;
+                &:hover {
+                    background-image: linear-gradient(#3E6BC9, #B63A9D, #FC5245, #FEDA55);
+                };
             }
-            img:nth-of-type(2):hover {
-                background-image: linear-gradient(#118A3D, #118A3D, #1A1414);
+            img:nth-of-type(2) {
                 border-radius: 50%;
+                &:hover {
+                    background-image: linear-gradient(#118A3D, #118A3D, #1A1414);
+                }
             }
-            img:nth-of-type(3):hover {
-                background-image: linear-gradient(#CD0001, #333);
+            img:nth-of-type(3) {
                 border-radius: 6px;
+                &:hover {
+                    background-color: #CD0001;
+                }
             }
         }
 
