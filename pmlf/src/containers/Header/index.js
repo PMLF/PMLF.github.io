@@ -10,6 +10,55 @@ const NavStyled = styled('nav')`
         justify-content: space-between;
         align-items: center;
 
+        svg {
+            margin-right: 20px;
+        }
+        div {
+            color: white;
+            display: flex;
+            align-items: center;
+
+            img:first-of-type {
+                margin: 0 20px 0 90px;
+                height: 60px;
+                &:hover {
+                    transform: none;
+                }
+            }
+            svg, img:last-of-type {
+                font-size: 40px;
+                height: 40px;
+                margin: 0 20px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.1s all;
+                    // background-image: linear-gradient(red, yellow);
+                    // border-radius: 10px;
+                }
+            }
+            img:last-of-type:hover {
+                background-image: linear-gradient(#118A3D, #118A3D, #1A1414);
+                border-radius: 50%;
+            }
+            svg:first-of-type:hover {
+                background-image: linear-gradient(#0E76A8, #084561);
+                border-radius: 6px;
+            }
+            svg:nth-of-type(2):hover {
+                background-image: linear-gradient(#0D2634, #266F99);
+                border-radius: 50%;
+            }
+            svg:nth-of-type(3):hover {
+                background-image: linear-gradient(#0F70D0, #4FD8FF);
+                border-radius: 50%;
+            }
+            svg:nth-of-type(4):hover {
+                background-image: linear-gradient(#3E6BC9, #B63A9D, #FC5245, #FEDA55);
+                border-radius: 12px;
+            }
+        }
+
         ul {
             margin: 10px;
             display: flex;
