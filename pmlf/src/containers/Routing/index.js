@@ -23,6 +23,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import SpotifyIcon from '../../images/spotify.svg'
+import CvIcon from '../../images/cv_icon_white.svg'
 
 export default function Routing() {
   return (
@@ -36,6 +37,7 @@ export default function Routing() {
             <SvgIcon component={AlternateEmailIcon} />
             <SvgIcon component={InstagramIcon} />
             <img src={SpotifyIcon} alt="Spotify icon" />
+            <img src={CvIcon} alt="CV icon" />
           </div>
           <ul>
             <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />

@@ -25,7 +25,7 @@ const NavStyled = styled('nav')`
                     transform: none;
                 }
             }
-            svg, img:last-of-type {
+            svg, img:nth-of-type(n+2) {
                 font-size: 40px;
                 height: 40px;
                 margin: 0 20px;
@@ -33,13 +33,7 @@ const NavStyled = styled('nav')`
                 &:hover {
                     transform: scale(1.1);
                     transition: 0.1s all;
-                    // background-image: linear-gradient(red, yellow);
-                    // border-radius: 10px;
                 }
-            }
-            img:last-of-type:hover {
-                background-image: linear-gradient(#118A3D, #118A3D, #1A1414);
-                border-radius: 50%;
             }
             svg:first-of-type:hover {
                 background-image: linear-gradient(#0E76A8, #084561);
@@ -56,6 +50,14 @@ const NavStyled = styled('nav')`
             svg:nth-of-type(4):hover {
                 background-image: linear-gradient(#3E6BC9, #B63A9D, #FC5245, #FEDA55);
                 border-radius: 12px;
+            }
+            img:nth-of-type(2):hover {
+                background-image: linear-gradient(#118A3D, #118A3D, #1A1414);
+                border-radius: 50%;
+            }
+            img:nth-of-type(3):hover {
+                background-image: linear-gradient(#CD0001, #333);
+                border-radius: 6px;
             }
         }
 
