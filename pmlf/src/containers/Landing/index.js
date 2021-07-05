@@ -25,9 +25,12 @@ const SectionStyled = styled('section')`
     h1 {
         font-size: 70px;
     }
-    img {
+    .logo {
         height: 70%;
-        margin-top: 20px;
+        margin: 20px auto 0;
+        position: relative;
+        z-index: 1;
+        max-width: 50%;
     }
     .footballFan {
         height: 400px;
@@ -57,7 +60,7 @@ export default function Landing() {
         <SectionStyled>
             <h1>Pedro Fonseca</h1>
             <h2>Front End dev | Football fan</h2>
-            <img src={Logo} alt="Logo" />
+            <img src={Logo} alt="Logo" className="logo" />
             <div className="footballFan">
                 <img src={FootballFanBorders} alt="Football fan"/>
             </div>

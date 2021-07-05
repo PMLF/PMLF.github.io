@@ -7,6 +7,36 @@ export default function SocialMediaButton({ href, icon, colorArray, borderRadius
     
     const SocialStyled = styled('a')`
         position: relative;
+        text-decoration: none;
+        color: ${darkTheme.colors.white1};
+
+        &:first-of-type {
+            margin: 0 20px 0 5%;
+            height: 60px;
+            &:hover {
+                transform: none;
+            }
+        }
+        &:nth-of-type(n+2) {
+            svg,
+            img {
+                font-size: 40px;
+                height: 40px;
+                margin: 0 20px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.1s all;
+                }
+            }
+            @media only screen and (max-width: 1200px) {
+                svg, img {
+                    font-size: 32px;
+                    height: 32px;
+                    margin: 0 12px;
+                }
+            }
+        }
         svg, img {
             border-radius: ${borderRadius};
             &:hover {
