@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { darkTheme } from '../../themes'
 
 const ImageStyled = styled('img')`
     max-height: 60px;
@@ -8,7 +9,7 @@ const ImageStyled = styled('img')`
     &:hover {
         transform: none;
     }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: ${darkTheme.breakpoint.xl}) {
         height: 50px;
     }
 `

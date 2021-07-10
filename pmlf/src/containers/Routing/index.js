@@ -7,6 +7,7 @@ import {
 import Landing from "../Landing";
 import Header from "../Header";
 import styled from "styled-components";
+import { darkTheme } from "../../themes";
 
 // Buttons
 import NavBarButton from '../../components/NavBarButton'
@@ -27,19 +28,60 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import SpotifyIcon from '../../images/spotify.svg'
 import CvIcon from '../../images/cv_icon_white.svg'
 import CvDocument from '../../assets/CV_PEDROFONSECA_en_2021.pdf'
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
-const MoreIconStyled = styled('div')`
-  font-size: 40px;
-  height: 60px;
+const HeaderContainer = styled('div')`
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+`
+
+const SocialLeftContainer = styled('div')`
+  display: flex;
+  flex-direction: row;
+`
+
+const SocialRightContainer = styled('div')`
   margin: 0;
-  div {
-    svg {
-      margin: 0 20px;
-      &:hover {
-        background-color: #444;
-        transform: scale(1.3);
-        border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  & > svg {
+    margin: 0 16px;
+    padding: 4px;
+    &:hover {
+      background-color: #444;
+      transform: rotate(90deg);
+      border-radius: 6px;
+    }
+    @media only screen and (min-width: ${darkTheme.breakpoint.lg}) {
+      display:none;
+    }
+  }
+`
+
+const OptionalIcons = styled('div')`
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
+    position: absolute;
+    flex-direction: column;
+    background-color: ${darkTheme.colors.greyDarker};
+    top: 60px;
+    left: -20px;
+    z-index: 1;
+    border-radius: 8px;
+    padding: 20px;
+
+    a {
+      &:nth-of-type(-n + 2) {
+        margin-bottom: 24px;
+      }
+      p {
+        top: 20px;
       }
     }
   }
@@ -50,9 +92,9 @@ export default function Routing() {
     <Router>
       <div>
         <Header>
-          <div className="header-container">
+          <HeaderContainer>
             <NavBarImg src={Signature} alt="Signature" />
-            <div className="social-media-md">
+            <SocialLeftContainer>
               <SocialMediaButton
                 href="https://www.linkedin.com/in/pedromlfonseca/"
                 icon={LinkedInIcon}
@@ -74,41 +116,41 @@ export default function Routing() {
                 borderRadius="50%"
                 label="GitHub"
               />
-            </div>
-            <div className="social-media-lg">
-              <SocialMediaButton
-                href={CvDocument}
-                icon={CvIcon}
-                colorArray={["#CD0001", "#CD4F44"]}
-                borderRadius="6px"
-                label="Download CV"
-                alt="CV download link"
-                download="CV_PEDROFONSECA_en_2021.pdf"
-              />
-              <SocialMediaButton
-                href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"
-                icon={SpotifyIcon}
-                colorArray={["#118A3D", "#118A3D"]}
-                borderRadius="50%"
-                label="Spotify"
-                alt="Spotify link"
-              />
-              <SocialMediaButton
-                href="https://www.instagram.com/pmlfonseca/"
-                icon={InstagramIcon}
-                colorArray={["#3E6BC9", "#B63A9D", "#FC5245", "#FEDA55"]}
-                borderRadius="12px"
-                label="Instagram"
-              />
-            </div>
-            <MoreIconStyled>
+            </SocialLeftContainer>
+            <SocialRightContainer>
+              <OptionalIcons>
+                <SocialMediaButton
+                  href={CvDocument}
+                  icon={CvIcon}
+                  colorArray={["#CD0001", "#CD4F44"]}
+                  borderRadius="6px"
+                  label="CV"
+                  alt="CV download link"
+                  download="CV_PEDROFONSECA_en_2021.pdf"
+                />
+                <SocialMediaButton
+                  href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"
+                  icon={SpotifyIcon}
+                  colorArray={["#118A3D", "#118A3D"]}
+                  borderRadius="50%"
+                  label="Spotify"
+                  alt="Spotify link"
+                />
+                <SocialMediaButton
+                  href="https://www.instagram.com/pmlfonseca/"
+                  icon={InstagramIcon}
+                  colorArray={["#3E6BC9", "#B63A9D", "#FC5245", "#FEDA55"]}
+                  borderRadius="12px"
+                  label="Instagram"
+                />
+              </OptionalIcons>
               <SvgIcon
                 className="moreIcon"
-                component={ArrowDropDownIcon}
+                component={ArrowForwardIosIcon}
                 label="More"
               />
-            </MoreIconStyled>
-          </div>
+            </SocialRightContainer>
+          </HeaderContainer>
           <ul>
             <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />
             <NavBarButton link="/work" icon={CodeIcon} text="Work" />

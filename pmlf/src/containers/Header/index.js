@@ -9,13 +9,6 @@ const NavStyled = styled('nav')`
     justify-content: space-between;
     align-items: center;
 
-    .header-container {
-        color: white;
-        display: flex;
-        align-items: center;
-        margin-left: 5%;
-    }
-
     ul {
         margin: 10px;
         display: flex;
@@ -37,7 +30,7 @@ const NavStyled = styled('nav')`
                 transform: scale(1.02);
                 background-color: ${darkTheme.colors.greyMidHover};
             }
-            @media only screen and (max-width: 1200px) {
+            @media only screen and (max-width: ${darkTheme.breakpoint.xl}) {
                 font-size: 20px;
             }
 

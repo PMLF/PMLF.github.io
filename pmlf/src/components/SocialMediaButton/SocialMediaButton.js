@@ -26,23 +26,26 @@ export default function SocialMediaButton({ href, icon, colorArray, borderRadius
                 display: block;
             }
         }
-        @media only screen and (max-width: 1200px) {
-            svg, img {
-                font-size: 32px;
-                height: 32px;
-                margin: 0 12px;
-            }
-        }
         p {
             position: absolute;
             left: 50%;
             transform: translate(-50%);
-            top: 8px;
+            top: 34px;
             display: none;
             font-size: 14px;
             font-family: ${darkTheme.fontFamily.main};
             text-align: center;
             width: 100px;
+        }
+        @media only screen and (max-width: ${darkTheme.breakpoint.xl}) {
+            svg, img {
+                font-size: 32px;
+                height: 32px;
+                margin: 0 12px;
+            }
+            p {
+                top: 26px;
+            }
         }
     `
 
