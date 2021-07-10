@@ -9,7 +9,7 @@ const NavStyled = styled('nav')`
     justify-content: space-between;
     align-items: center;
 
-    div {
+    .header-container {
         color: white;
         display: flex;
         align-items: center;

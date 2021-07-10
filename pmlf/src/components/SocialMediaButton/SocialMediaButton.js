@@ -10,47 +10,34 @@ export default function SocialMediaButton({ href, icon, colorArray, borderRadius
         text-decoration: none;
         color: ${darkTheme.colors.white1};
 
-        &:first-of-type {
-            margin: 0 20px 0 5%;
-            height: 60px;
-            &:hover {
-                transform: none;
-            }
-        }
-        &:nth-of-type(n+2) {
-            svg,
-            img {
-                font-size: 40px;
-                height: 40px;
-                margin: 0 20px;
-
-                &:hover {
-                    transform: scale(1.1);
-                    transition: 0.1s all;
-                }
-            }
-            @media only screen and (max-width: 1200px) {
-                svg, img {
-                    font-size: 32px;
-                    height: 32px;
-                    margin: 0 12px;
-                }
-            }
-        }
-        svg, img {
+        svg,
+        img {
+            font-size: 40px;
+            height: 40px;
+            margin: 0 20px;
             border-radius: ${borderRadius};
+
             &:hover {
+                transform: scale(1.1);
+                transition: 0.1s all;
                 background-image: linear-gradient(${colorArray.join(',')});
             }
             &:hover + p {
                 display: block;
             }
         }
+        @media only screen and (max-width: 1200px) {
+            svg, img {
+                font-size: 32px;
+                height: 32px;
+                margin: 0 12px;
+            }
+        }
         p {
             position: absolute;
             left: 50%;
             transform: translate(-50%);
-            top: 28px;
+            top: 8px;
             display: none;
             font-size: 14px;
             font-family: ${darkTheme.fontFamily.main};
