@@ -54,6 +54,7 @@ const SocialRightContainer = styled('div')`
     &:hover {
       background-color: #444;
       transform: rotate(90deg);
+      transition: all 0.3s;
       border-radius: 6px;
     }
     @media only screen and (min-width: ${darkTheme.breakpoint.lg}) {
