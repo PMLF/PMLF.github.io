@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import {
   BrowserRouter as Router,
   Switch,
@@ -89,6 +89,8 @@ const OptionalIcons = styled('div')`
 `
 
 export default function Routing() {
+  const [displayAllSocial, setDisplayAllSocial] = useState(false)
+
   return (
     <Router>
       <div>
@@ -119,36 +121,42 @@ export default function Routing() {
               />
             </SocialLeftContainer>
             <SocialRightContainer>
-              <OptionalIcons>
-                <SocialMediaButton
-                  href={CvDocument}
-                  icon={CvIcon}
-                  colorArray={["#CD0001", "#CD4F44"]}
-                  borderRadius="6px"
-                  label="CV"
-                  alt="CV download link"
-                  download="CV_PEDROFONSECA_en_2021.pdf"
-                />
-                <SocialMediaButton
-                  href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"
-                  icon={SpotifyIcon}
-                  colorArray={["#118A3D", "#118A3D"]}
-                  borderRadius="50%"
-                  label="Spotify"
-                  alt="Spotify link"
-                />
-                <SocialMediaButton
-                  href="https://www.instagram.com/pmlfonseca/"
-                  icon={InstagramIcon}
-                  colorArray={["#3E6BC9", "#B63A9D", "#FC5245", "#FEDA55"]}
-                  borderRadius="12px"
-                  label="Instagram"
-                />
-              </OptionalIcons>
+              {
+                displayAllSocial || window.innerWidth > darkTheme.breakpoint.lg
+                  ? <OptionalIcons >
+                  <SocialMediaButton
+                    href={CvDocument}
+                    icon={CvIcon}
+                    colorArray={["#CD0001", "#CD4F44"]}
+                    borderRadius="6px"
+                    label="CV"
+                    alt="CV download link"
+                    download="CV_PEDROFONSECA_en_2021.pdf"
+                  />
+                  <SocialMediaButton
+                    href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"
+                    icon={SpotifyIcon}
+                    colorArray={["#118A3D", "#118A3D"]}
+                    borderRadius="50%"
+                    label="Spotify"
+                    alt="Spotify link"
+                  />
+                  <SocialMediaButton
+                    href="https://www.instagram.com/pmlfonseca/"
+                    icon={InstagramIcon}
+                    colorArray={["#3E6BC9", "#B63A9D", "#FC5245", "#FEDA55"]}
+                    borderRadius="12px"
+                    label="Instagram"
+                  />
+                </OptionalIcons>
+                  : null
+              }
+              
               <SvgIcon
                 className="moreIcon"
                 component={ArrowForwardIosIcon}
                 label="More"
+                onClick={() => setDisplayAllSocial(!displayAllSocial)}
               />
             </SocialRightContainer>
           </HeaderContainer>
