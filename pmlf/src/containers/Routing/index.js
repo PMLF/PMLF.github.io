@@ -40,6 +40,9 @@ const HeaderContainer = styled('div')`
 const SocialLeftContainer = styled('div')`
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+    display:none;
+  }
 `
 
 const SocialRightContainer = styled('div')`
@@ -47,20 +50,6 @@ const SocialRightContainer = styled('div')`
   position: relative;
   display: flex;
   align-items: center;
-
-  & > svg {
-    margin: 0 16px;
-    padding: 4px;
-    &:hover {
-      background-color: #444;
-      transform: rotate(90deg);
-      transition: all 0.3s;
-      border-radius: 6px;
-    }
-    @media only screen and (min-width: ${darkTheme.breakpoint.lg}) {
-      display:none;
-    }
-  }
 `
 
 const OptionalIcons = styled('div')`
@@ -85,6 +74,20 @@ const OptionalIcons = styled('div')`
         top: 20px;
       }
     }
+  }
+`
+
+const MoreIcon = styled(SvgIcon)`
+  margin: 0 16px;
+  padding: 4px;
+  &:hover {
+    background-color: #444;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+    border-radius: 6px;
+  }
+  @media only screen and (min-width: ${darkTheme.breakpoint.lg}) {
+    display:none;
   }
 `
 
@@ -122,7 +125,7 @@ export default function Routing() {
             </SocialLeftContainer>
             <SocialRightContainer>
               {
-                displayAllSocial || window.innerWidth > darkTheme.breakpoint.lg
+                displayAllSocial || window.innerWidth > darkTheme.breakpoint.lg.slice(0, -2)
                   ? <OptionalIcons >
                   <SocialMediaButton
                     href={CvDocument}
@@ -151,14 +154,13 @@ export default function Routing() {
                 </OptionalIcons>
                   : null
               }
-              
-              <SvgIcon
-                className="moreIcon"
-                component={ArrowForwardIosIcon}
-                label="More"
-                onClick={() => setDisplayAllSocial(!displayAllSocial)}
-              />
             </SocialRightContainer>
+            <MoreIcon
+              className="moreIcon"
+              component={ArrowForwardIosIcon}
+              label="More"
+              onClick={() => setDisplayAllSocial(!displayAllSocial)}
+            />
           </HeaderContainer>
           <ul>
             <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />
