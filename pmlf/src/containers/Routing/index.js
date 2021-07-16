@@ -102,6 +102,20 @@ const RightNavUl = styled('ul')`
   }
 `
 
+const MenuIconStyled = styled(MenuIcon)`
+  && {
+    font-size: 28px;
+  }
+  color: white;
+  margin-right: 5%;
+  padding: 5px;
+  border-radius: 6px;
+  &:hover {
+    transform: scale(1.1);
+    background-color: #444;
+  }
+`
+
 export default function Routing() {
   const [displayAllSocial, setDisplayAllSocial] = useState(false)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -180,7 +194,7 @@ export default function Routing() {
             <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />
             <NavBarButton link="/work" icon={CodeIcon} text="Work" />
           </RightNavUl>
-          <MenuIcon
+          <MenuIconStyled
           component={MenuIcon}
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         />
