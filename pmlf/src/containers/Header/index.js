@@ -15,38 +15,6 @@ const NavStyled = styled('nav')`
         flex-direction: row;
         justify-content: flex-end;
         padding-right: 5%;
-
-        li {
-            font-size: 24px;
-            list-style-type: none;
-            margin-left: 20px;
-            background-color: ${darkTheme.colors.greyMid};
-            border-radius: 4px;
-
-            &:first-of-type {
-                margin-left: 0;
-            }
-            &:hover {
-                transform: scale(1.02);
-                background-color: ${darkTheme.colors.greyMidHover};
-            }
-            @media only screen and (max-width: ${darkTheme.breakpoint.xl}) {
-                font-size: 20px;
-            }
-
-            a {
-                text-decoration: none;
-                color: ${darkTheme.colors.white1};
-                font-family: ${darkTheme.fontFamily.main};
-                display: flex;
-                align-items: center;
-                padding: 5px 10px;
-
-                svg {
-                    margin-right: 8px;
-                }
-            }
-        }
     }
 `
 
