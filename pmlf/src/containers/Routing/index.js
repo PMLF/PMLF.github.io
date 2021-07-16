@@ -29,6 +29,7 @@ import SpotifyIcon from '../../images/spotify.svg'
 import CvIcon from '../../images/cv_icon_white.svg'
 import CvDocument from '../../assets/CV_PEDROFONSECA_en_2021.pdf'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import MenuIcon from '@material-ui/icons/Menu'
 
 const HeaderContainer = styled('div')`
   color: white;
@@ -87,12 +88,23 @@ const MoreIcon = styled(SvgIcon)`
     border-radius: 6px;
   }
   @media only screen and (min-width: ${darkTheme.breakpoint.lg}) {
-    display:none;
+    display:none!important;
+  }
+  @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+    display:none!important;
+  }
+`
+
+const RightNavUl = styled('ul')`
+  @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+    display:none!important;
+    background-color: red;
   }
 `
 
 export default function Routing() {
   const [displayAllSocial, setDisplayAllSocial] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   return (
     <Router>
@@ -125,7 +137,11 @@ export default function Routing() {
             </SocialLeftContainer>
             <SocialRightContainer>
               {
-                displayAllSocial || window.innerWidth > darkTheme.breakpoint.lg.slice(0, -2)
+                displayAllSocial
+                  || (
+                    window.innerWidth > darkTheme.breakpoint.lg.slice(0, -2)
+                    && window.innerWidth > darkTheme.breakpoint.md.slice(0, -2)
+                    )
                   ? <OptionalIcons >
                   <SocialMediaButton
                     href={CvDocument}
@@ -156,16 +172,18 @@ export default function Routing() {
               }
             </SocialRightContainer>
             <MoreIcon
-              className="moreIcon"
               component={ArrowForwardIosIcon}
-              label="More"
               onClick={() => setDisplayAllSocial(!displayAllSocial)}
             />
           </HeaderContainer>
-          <ul>
+          <RightNavUl>
             <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />
             <NavBarButton link="/work" icon={CodeIcon} text="Work" />
-          </ul>
+          </RightNavUl>
+          <MenuIcon
+          component={MenuIcon}
+          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        />
         </Header>
         
         <Switch>
