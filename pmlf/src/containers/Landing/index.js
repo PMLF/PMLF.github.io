@@ -56,7 +56,7 @@ const Face = styled('img')`
     max-height: 70%;
     margin: 20px auto 0;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 75%;
     
     @media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
@@ -85,9 +85,21 @@ const BackImageStyled = styled('div')`
     &:first-of-type {
         height: 350px;
         left: 0;
+        z-index: 1;
         &:hover {
             background: url(${FrontEndDev}) no-repeat;
             background-size: 100% auto;
+        }
+        @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+            height: 280px;
+        }
+        @media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+            height: 210px;
+            background: url(${FrontEndDev}) no-repeat;
+            background-size: 100% auto;
+            img {
+                visibility: hidden;
+            }
         }
     }
     &:last-of-type {
@@ -96,6 +108,17 @@ const BackImageStyled = styled('div')`
         &:hover {
             background: url(${FootballFan}) no-repeat;
             background-size: 100% auto;
+        }
+        @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+            height: 350px;
+        }
+        @media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+            height: 220px;
+            background: url(${FootballFan}) no-repeat;
+            background-size: 100% auto;
+            img {
+                visibility: hidden;
+            }
         }
     }
 `
