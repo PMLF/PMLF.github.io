@@ -8,7 +8,8 @@ const SectionStyled = styled('section')`
     text-align: center;
     background-color: ${darkTheme.colors.greyLight};
     img {
-        width: 400px;
+        width: 20%;
+        min-width: 200px;
     }
 `
 
