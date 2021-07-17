@@ -1,10 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { darkTheme } from '../../themes'
+import CloseIcon from '@material-ui/icons/Close';
+
+const SidebarContainer = styled('div')`
+    @media only screen and (min-width: calc(${darkTheme.breakpoint.md} + 1px)) {
+        display:none;
+    }
+`
 
 const SidebarStyled = styled('div')`
     height: 100%;
-    width: 40%;
+    width: 50%;
     background-color: ${darkTheme.colors.greyDarker};
     position:fixed;
     right: 0;
@@ -14,6 +21,9 @@ const SidebarStyled = styled('div')`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    -moz-box-shadow:    0px 0px 30px 0px rgba(20, 20, 20, 0.7);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(20, 20, 20, 0.7);
+    box-shadow:         px 0px 30px 0px rgba(20, 20, 20, 0.7);
 
     & > li,
     & > a {
@@ -46,17 +56,21 @@ const Backdrop = styled('div')`
     z-index: 9;
 `
 
-const SidebarContainer = styled('div')`
-    display: none;
-    @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
-        display:flex;
-    }
+const CloseSidebar = styled(CloseIcon)`
+    color: white;
+    && { font-size: 40px; }
+    position: absolute;
+    z-index: 11;
+    right: 30px;
+    top: 30px;
+    
 `
 
-export default function SidebarMobile({ children }) {
+export default function SidebarMobile({ children, hidden, hiddenToggle }) {
     return (
-        <SidebarContainer>
-            <Backdrop />
+        <SidebarContainer hidden={hidden}>
+            <CloseSidebar onClick={() => hiddenToggle()} />
+            <Backdrop onClick={() => hiddenToggle()} />
             <SidebarStyled>
                 {children}
             </SidebarStyled>

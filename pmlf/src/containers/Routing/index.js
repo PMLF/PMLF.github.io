@@ -34,6 +34,12 @@ import MenuIcon from '@material-ui/icons/Menu'
 // Sidebar
 import SidebarMobile from "../SidebarMobile";
 
+const HeaderStyled = styled(Header)`
+  @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+    display:none!important;
+  }
+`
+
 const HeaderContainer = styled('div')`
   color: white;
   display: flex;
@@ -90,7 +96,7 @@ const MoreIcon = styled(SvgIcon)`
     transition: all 0.3s;
     border-radius: 6px;
   }
-  @media only screen and (min-width: ${darkTheme.breakpoint.lg}) {
+  @media only screen and (min-width: calc(${darkTheme.breakpoint.lg} + 1px)) {
     display:none!important;
   }
   @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
@@ -101,7 +107,6 @@ const MoreIcon = styled(SvgIcon)`
 const RightNavUl = styled('ul')`
   @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
     display:none!important;
-    background-color: red;
   }
 `
 
@@ -126,12 +131,12 @@ const MenuIconStyled = styled(MenuIcon)`
 
 export default function Routing() {
   const [displayAllSocial, setDisplayAllSocial] = useState(false)
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [isSidebarHidden, setIsSidebarHidden] = useState(true)
 
   return (
     <Router>
       <div>
-        <Header>
+        <HeaderStyled>
           <HeaderContainer>
             <NavBarImg src={Signature} alt="Signature" />
             <SocialLeftContainer>
@@ -204,10 +209,10 @@ export default function Routing() {
           </RightNavUl>
           <MenuIconStyled
           component={MenuIcon}
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+          onClick={() => setIsSidebarHidden(!isSidebarHidden)}
         />
-        </Header>
-        <SidebarMobile>
+        </HeaderStyled>
+        <SidebarMobile hidden={isSidebarHidden} hiddenToggle={() => setIsSidebarHidden(true)}>
           <NavBarButton link="/background" icon={EmojiPeopleIcon} text="Background" />
           <NavBarButton link="/work" icon={CodeIcon} text="Work" />
           <HrStyled />
