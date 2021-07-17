@@ -6,6 +6,7 @@ import FootballFan from '../../images/claque.svg'
 import FootballFanBorders from '../../images/claque_borders.svg'
 import FrontEndDev from '../../images/frontenddev.svg'
 import FrontEndDevBorders from '../../images/frontenddev_borders.svg'
+import WorkingOnIt from '../../components/WorkingOnIt'
 
 const SectionStyled = styled('section')`
     height: 825px;
@@ -126,16 +127,19 @@ const BackImageStyled = styled('div')`
 export default function Landing() {
 
     return (
-        <SectionStyled>
-            <Name>Pedro Fonseca</Name>
-            <Description>Front End dev | Football fan</Description>
-            <Face src={Logo} alt="Logo" className="logo" />
-            <BackImageStyled>
-                <img src={FrontEndDevBorders} alt="Front End developer"/>
-            </BackImageStyled>
-            <BackImageStyled>
-                <img src={FootballFanBorders} alt="Football fan"/>
-            </BackImageStyled>
-        </SectionStyled>
+        <section>
+            <SectionStyled>
+                <Name>Pedro Fonseca</Name>
+                <Description>Front End dev | Football fan</Description>
+                <Face src={Logo} alt="Logo" className="logo" />
+                <BackImageStyled>
+                    <img src={FrontEndDevBorders} alt="Front End developer"/>
+                </BackImageStyled>
+                <BackImageStyled>
+                    <img src={FootballFanBorders} alt="Football fan"/>
+                </BackImageStyled>
+            </SectionStyled>
+            <WorkingOnIt />
+        </section>
     )
 }
