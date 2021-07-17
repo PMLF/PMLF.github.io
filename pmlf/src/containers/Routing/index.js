@@ -127,6 +127,9 @@ const MenuIconStyled = styled(MenuIcon)`
     transform: scale(1.1);
     background-color: #444;
   }
+  @media only screen and (min-width: calc(${darkTheme.breakpoint.md} + 1px)) {
+    display:none!important;
+  }
 `
 
 export default function Routing() {

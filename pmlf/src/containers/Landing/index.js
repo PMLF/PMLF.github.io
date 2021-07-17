@@ -69,13 +69,11 @@ const Face = styled('img')`
 `
 
 const BackImageStyled = styled('div')`
-    height: 400px;
     position: absolute;
     bottom: 0;
     margin: 0;
-    
+
     &:hover {
-        
         img {
             visibility: hidden;
         }
@@ -85,6 +83,7 @@ const BackImageStyled = styled('div')`
         margin: 0;
     }
     &:first-of-type {
+        height: 350px;
         left: 0;
         &:hover {
             background: url(${FrontEndDev}) no-repeat;
@@ -92,6 +91,7 @@ const BackImageStyled = styled('div')`
         }
     }
     &:last-of-type {
+        height: 450px;
         right: 0;
         &:hover {
             background: url(${FootballFan}) no-repeat;
