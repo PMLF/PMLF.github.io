@@ -16,6 +16,9 @@ const SectionStyled = styled('section')`
     @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
         height: 700px;
     }
+    @media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+        height: 500px;
+    }
     h1,
     h2 {
         text-transform: uppercase;
@@ -49,8 +52,18 @@ const SectionStyled = styled('section')`
 
 const Name = styled('h1')`
     font-size: 70px;
+    
     @media only screen and (max-width: ${darkTheme.breakpoint.md}) {
         font-size: 58px;
+    }
+    @media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+        font-size: 40px;
+    }
+`
+
+const Description = styled('h2')`
+    @media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+        font-size: 20px;
     }
 `
 
@@ -65,6 +78,9 @@ const Face = styled('img')`
         margin: 40px auto 0;
         max-width: 70%;
     }
+    @media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+        max-width: 85%;
+    }
 `
 
 export default function Landing() {
@@ -72,7 +88,7 @@ export default function Landing() {
     return (
         <SectionStyled>
             <Name>Pedro Fonseca</Name>
-            <h2>Front End dev | Football fan</h2>
+            <Description>Front End dev | Football fan</Description>
             <Face src={Logo} alt="Logo" className="logo" />
             <div className="footballFan">
                 <img src={FootballFanBorders} alt="Football fan"/>
