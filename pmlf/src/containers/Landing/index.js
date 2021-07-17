@@ -4,6 +4,8 @@ import {darkTheme} from '../../themes'
 import Logo from '../../images/pmlflogotransparent.svg'
 import FootballFan from '../../images/claque.svg'
 import FootballFanBorders from '../../images/claque_borders.svg'
+import FrontEndDev from '../../images/frontenddev.svg'
+import FrontEndDevBorders from '../../images/frontenddev_borders.svg'
 
 const SectionStyled = styled('section')`
     height: 825px;
@@ -29,24 +31,7 @@ const SectionStyled = styled('section')`
         margin: 0;
     }
     .footballFan {
-        height: 400px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-
-        &:hover {
-            background: url(${FootballFan}) no-repeat;
-            background-size: 100% auto;
-
-            img {
-                visibility: hidden;
-            }
-        }
-        img {
-            margin: 0;
-            height: 100%;
-        }
+        
     }
 `
 
@@ -83,6 +68,38 @@ const Face = styled('img')`
     }
 `
 
+const BackImageStyled = styled('div')`
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    
+    &:hover {
+        
+        img {
+            visibility: hidden;
+        }
+    }
+    img {
+        height: 100%;
+        margin: 0;
+    }
+    &:first-of-type {
+        left: 0;
+        &:hover {
+            background: url(${FrontEndDev}) no-repeat;
+            background-size: 100% auto;
+        }
+    }
+    &:last-of-type {
+        right: 0;
+        &:hover {
+            background: url(${FootballFan}) no-repeat;
+            background-size: 100% auto;
+        }
+    }
+`
+
 export default function Landing() {
 
     return (
@@ -90,9 +107,12 @@ export default function Landing() {
             <Name>Pedro Fonseca</Name>
             <Description>Front End dev | Football fan</Description>
             <Face src={Logo} alt="Logo" className="logo" />
-            <div className="footballFan">
+            <BackImageStyled>
+                <img src={FrontEndDevBorders} alt="Front End developer"/>
+            </BackImageStyled>
+            <BackImageStyled>
                 <img src={FootballFanBorders} alt="Football fan"/>
-            </div>
+            </BackImageStyled>
         </SectionStyled>
     )
 }
