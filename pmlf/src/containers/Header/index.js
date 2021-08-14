@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { darkTheme } from "../../themes";
 
@@ -129,12 +129,9 @@ const MenuIconStyled = styled(MenuIcon)`
 	}
 `;
 
-export default function Header({
-	displayAllSocial,
-	setDisplayAllSocial,
-	isSidebarHidden,
-	setIsSidebarHidden,
-}) {
+export default function Header({ isSidebarHidden, setIsSidebarHidden }) {
+	const [displayAllSocial, setDisplayAllSocial] = useState(false);
+
 	return (
 		<NavStyled>
 			<HeaderContainer>
