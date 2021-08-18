@@ -9,9 +9,8 @@ const SmallBubble = styled("div")`
 	height: 60px;
 	width: 200px;
 	color: white;
-	top: 46%;
+	top: 40%;
 	left: 32%;
-	z-index: 2;
 
 	&:after {
 		content: "";
@@ -27,7 +26,6 @@ const SmallBubble = styled("div")`
 		margin-left: -12px;
 		margin-bottom: -20px;
 	}
-
 	p {
 		text-align: center;
 		font-size: 26px;
@@ -41,6 +39,27 @@ const SmallBubble = styled("div")`
 		-moz-user-select: none; /* Old versions of Firefox */
 		-ms-user-select: none; /* Internet Explorer/Edge */
 		user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.xl}) {
+		left: 20%;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
+		left: 15%;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+		left: 10%;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+		top: 30%;
+		height: 40px;
+		width: 140px;
+		p {
+			font-size: 18px;
+			line-height: 40px;
+		}
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.xs}) {
+		top: 40%;
 	}
 `;
 
