@@ -29,8 +29,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 const NavStyled = styled("nav")`
 	background-color: ${darkTheme.colors.greyDarker};
 	padding: 20px;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 
 	ul {
@@ -40,6 +38,14 @@ const NavStyled = styled("nav")`
 		justify-content: flex-end;
 		padding-right: 5%;
 	}
+`;
+
+const Wrapper = styled("div")`
+	margin: auto;
+	max-width: 1920px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
 `;
 
 const HeaderContainer = styled("div")`
@@ -134,82 +140,85 @@ export default function Header({ isSidebarHidden, setIsSidebarHidden }) {
 
 	return (
 		<NavStyled>
-			<HeaderContainer>
-				<NavBarImg src={Signature} alt="Signature" />
-				<SocialLeftContainer>
-					<SocialMediaButton
-						href="https://www.linkedin.com/in/pedromlfonseca/"
-						icon={LinkedInIcon}
-						colorArray={["#0E76A8", "#084561"]}
-						borderRadius="6px"
-						label="LinkedIn"
+			<Wrapper>
+				<HeaderContainer>
+					<NavBarImg src={Signature} alt="Signature" />
+					<SocialLeftContainer>
+						<SocialMediaButton
+							href="https://www.linkedin.com/in/pedromlfonseca/"
+							icon={LinkedInIcon}
+							colorArray={["#0E76A8", "#084561"]}
+							borderRadius="6px"
+							label="LinkedIn"
+						/>
+						<SocialMediaButton
+							href="mailto:pmlfonseca@outlook.com"
+							icon={AlternateEmailIcon}
+							colorArray={["#0F70D0", "#4FD8FF"]}
+							borderRadius="50%"
+							label="Email me"
+						/>
+						<SocialMediaButton
+							href="https://github.com/PMLF"
+							icon={GitHubIcon}
+							colorArray={["#0D2634", "#266F99"]}
+							borderRadius="50%"
+							label="GitHub"
+						/>
+					</SocialLeftContainer>
+					<SocialRightContainer>
+						{displayAllSocial ||
+						(window.innerWidth >
+							darkTheme.breakpoint.lg.slice(0, -2) &&
+							window.innerWidth >
+								darkTheme.breakpoint.md.slice(0, -2)) ? (
+							<OptionalIcons>
+								<SocialMediaButton
+									href={CvDocument}
+									icon={CvIcon}
+									colorArray={["#CD0001", "#CD4F44"]}
+									borderRadius="6px"
+									label="CV"
+									alt="CV download link"
+									download="CV_PEDROFONSECA_en_2021.pdf"
+								/>
+								<SocialMediaButton
+									href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"
+									icon={SpotifyIcon}
+									colorArray={["#118A3D", "#118A3D"]}
+									borderRadius="50%"
+									label="Spotify"
+									alt="Spotify link"
+								/>
+								<SocialMediaButton
+									href="https://www.instagram.com/pmlfonseca/"
+									icon={InstagramIcon}
+									colorArray={[
+										"#3E6BC9",
+										"#B63A9D",
+										"#FC5245",
+										"#FEDA55",
+									]}
+									borderRadius="12px"
+									label="Instagram"
+								/>
+							</OptionalIcons>
+						) : null}
+					</SocialRightContainer>
+					<MoreIcon
+						component={ArrowForwardIosIcon}
+						onClick={() => setDisplayAllSocial(!displayAllSocial)}
 					/>
-					<SocialMediaButton
-						href="mailto:pmlfonseca@outlook.com"
-						icon={AlternateEmailIcon}
-						colorArray={["#0F70D0", "#4FD8FF"]}
-						borderRadius="50%"
-						label="Email me"
+				</HeaderContainer>
+				<RightNavUl>
+					<NavBarButton
+						link="/background"
+						icon={EmojiPeopleIcon}
+						text="Background"
 					/>
-					<SocialMediaButton
-						href="https://github.com/PMLF"
-						icon={GitHubIcon}
-						colorArray={["#0D2634", "#266F99"]}
-						borderRadius="50%"
-						label="GitHub"
-					/>
-				</SocialLeftContainer>
-				<SocialRightContainer>
-					{displayAllSocial ||
-					(window.innerWidth > darkTheme.breakpoint.lg.slice(0, -2) &&
-						window.innerWidth >
-							darkTheme.breakpoint.md.slice(0, -2)) ? (
-						<OptionalIcons>
-							<SocialMediaButton
-								href={CvDocument}
-								icon={CvIcon}
-								colorArray={["#CD0001", "#CD4F44"]}
-								borderRadius="6px"
-								label="CV"
-								alt="CV download link"
-								download="CV_PEDROFONSECA_en_2021.pdf"
-							/>
-							<SocialMediaButton
-								href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"
-								icon={SpotifyIcon}
-								colorArray={["#118A3D", "#118A3D"]}
-								borderRadius="50%"
-								label="Spotify"
-								alt="Spotify link"
-							/>
-							<SocialMediaButton
-								href="https://www.instagram.com/pmlfonseca/"
-								icon={InstagramIcon}
-								colorArray={[
-									"#3E6BC9",
-									"#B63A9D",
-									"#FC5245",
-									"#FEDA55",
-								]}
-								borderRadius="12px"
-								label="Instagram"
-							/>
-						</OptionalIcons>
-					) : null}
-				</SocialRightContainer>
-				<MoreIcon
-					component={ArrowForwardIosIcon}
-					onClick={() => setDisplayAllSocial(!displayAllSocial)}
-				/>
-			</HeaderContainer>
-			<RightNavUl>
-				<NavBarButton
-					link="/background"
-					icon={EmojiPeopleIcon}
-					text="Background"
-				/>
-				<NavBarButton link="/work" icon={CodeIcon} text="Work" />
-			</RightNavUl>
+					<NavBarButton link="/work" icon={CodeIcon} text="Work" />
+				</RightNavUl>
+			</Wrapper>
 			<MenuIconStyled
 				component={MenuIcon}
 				onClick={() => setIsSidebarHidden(!isSidebarHidden)}

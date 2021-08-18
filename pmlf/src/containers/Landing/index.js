@@ -9,12 +9,7 @@ import FrontEndDevBorders from "../../images/frontenddev_borders.svg";
 import SpeechBubble from "../../components/SpeechBubble";
 
 const SectionStyled = styled("section")`
-	height: 825px;
 	background-color: ${darkTheme.colors.greyDark};
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
-	position: relative;
 
 	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
 		height: 700px;
@@ -31,6 +26,16 @@ const SectionStyled = styled("section")`
 		text-align: center;
 		margin: 0;
 	}
+`;
+
+const Wrapper = styled("div")`
+	margin: auto;
+	height: 825px;
+	max-width: 1920px;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
 `;
 
 const Name = styled("h1")`
@@ -125,16 +130,21 @@ export default function Landing() {
 	return (
 		<section>
 			<SectionStyled>
-				<Name>Pedro Fonseca</Name>
-				<Description>Front End dev | Football fan</Description>
-				<Face src={Logo} alt="Logo" className="logo" />
-				<SpeechBubble label="Let's talk?" />
-				<BackImageStyled>
-					<img src={FrontEndDevBorders} alt="Front End developer" />
-				</BackImageStyled>
-				<BackImageStyled>
-					<img src={FootballFanBorders} alt="Football fan" />
-				</BackImageStyled>
+				<Wrapper>
+					<Name>Pedro Fonseca</Name>
+					<Description>Front End dev | Football fan</Description>
+					<Face src={Logo} alt="Logo" className="logo" />
+					<SpeechBubble label="Let's talk?" />
+					<BackImageStyled>
+						<img
+							src={FrontEndDevBorders}
+							alt="Front End developer"
+						/>
+					</BackImageStyled>
+					<BackImageStyled>
+						<img src={FootballFanBorders} alt="Football fan" />
+					</BackImageStyled>
+				</Wrapper>
 			</SectionStyled>
 		</section>
 	);

@@ -5,23 +5,35 @@ import { darkTheme } from "../../themes";
 const SectionStyled = styled("section")`
 	height: 825px;
 	background-color: ${darkTheme.colors.greyLight};
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
 	position: relative;
+	padding: 4% 10%;
 	border-bottom: solid 1px black; //remove later
 
 	h1,
 	h2 {
 		text-transform: uppercase;
-		color: white;
+		color: ${darkTheme.colors.greyDarker};
 		font-family: ${darkTheme.fontFamily.main};
 		font-weight: 400;
-		text-align: center;
+		text-align: left;
 		margin: 0;
+	}
+	h1 {
 	}
 `;
 
+const Wrapper = styled("div")`
+	max-width: 1920px;
+	margin: auto;
+`;
+
 export default function WhatCanIGetYou() {
-	return <SectionStyled></SectionStyled>;
+	return (
+		<SectionStyled>
+			<Wrapper>
+				<h1>So... what can I get you?</h1>
+				<h2>People come here for all sorts of reasons</h2>
+			</Wrapper>
+		</SectionStyled>
+	);
 }
