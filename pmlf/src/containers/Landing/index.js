@@ -6,7 +6,6 @@ import FootballFan from "../../images/claque.svg";
 import FootballFanBorders from "../../images/claque_borders.svg";
 import FrontEndDev from "../../images/frontenddev.svg";
 import FrontEndDevBorders from "../../images/frontenddev_borders.svg";
-import WorkingOnIt from "../../components/WorkingOnIt";
 import SpeechBubble from "../../components/SpeechBubble";
 
 const SectionStyled = styled("section")`
@@ -137,7 +136,6 @@ export default function Landing() {
 					<img src={FootballFanBorders} alt="Football fan" />
 				</BackImageStyled>
 			</SectionStyled>
-			<WorkingOnIt />
 		</section>
 	);
 }

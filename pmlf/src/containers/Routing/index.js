@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "../Landing";
+import WhatCanIGetYou from "../WhatCanIGetYou";
+import WorkingOnIt from "../../components/WorkingOnIt";
 import Header from "../Header";
 
 // Sidebar
@@ -25,6 +27,8 @@ export default function Routing() {
 					{/*New routes here*/}
 					<Route path="/">
 						<Landing />
+						<WhatCanIGetYou />
+						<WorkingOnIt />
 					</Route>
 				</Switch>
 			</div>
