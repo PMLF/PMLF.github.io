@@ -32,6 +32,18 @@ const ArrowDiv = styled("div")`
 	position: absolute;
 	top: 40px;
 	right: 40px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: ${darkTheme.colors.greyLight};
+		-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+		transition: all 0.3s;
+	}
 `;
 
 export default function TopicCard({ title, image, link }) {
