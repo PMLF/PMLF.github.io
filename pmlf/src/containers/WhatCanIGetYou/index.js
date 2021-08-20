@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { darkTheme } from "../../themes";
+import TopicCard from "../../components/TopicCard";
 
 const SectionStyled = styled("section")`
-	height: 825px;
 	background-color: ${darkTheme.colors.greyLight};
 	position: relative;
-	padding: 4% 10%;
+	padding: 0 10%;
 	border-bottom: solid 1px black; //remove later
 
 	h1,
@@ -20,6 +20,7 @@ const SectionStyled = styled("section")`
 	}
 	h1 {
 		font-size: 50px;
+		padding-top: 50px;
 	}
 `;
 
@@ -28,12 +29,22 @@ const Wrapper = styled("div")`
 	margin: auto;
 `;
 
+const CardsSection = styled("section")`
+	display: flex;
+	flex-direction: row;
+`;
+
 export default function WhatCanIGetYou() {
 	return (
 		<SectionStyled>
 			<Wrapper>
 				<h1>So... what can I get you?</h1>
 				<h2>People come here for all sorts of reasons</h2>
+				<CardsSection>
+					<TopicCard />
+					<TopicCard />
+					<TopicCard />
+				</CardsSection>
 			</Wrapper>
 		</SectionStyled>
 	);
