@@ -41,9 +41,9 @@ export default function WhatCanIGetYou() {
 				<h1>So... what can I get you?</h1>
 				<h2>People come here for all sorts of reasons</h2>
 				<CardsSection>
-					<TopicCard />
-					<TopicCard />
-					<TopicCard />
+					<TopicCard title="Background" />
+					<TopicCard title="Work" />
+					<TopicCard title="Free time" />
 				</CardsSection>
 			</Wrapper>
 		</SectionStyled>
