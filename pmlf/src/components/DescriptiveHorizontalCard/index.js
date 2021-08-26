@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
-// Images
 import { darkTheme } from "../../themes";
 
 const Card = styled("div")`
