@@ -4,6 +4,7 @@ import Landing from "../Landing";
 import WhatCanIGetYou from "../WhatCanIGetYou";
 import WorkingOnIt from "../../components/WorkingOnIt";
 import Header from "../Header";
+import Background from "../Background";
 
 // Sidebar
 import SidebarMobile from "../SidebarMobile";
@@ -25,6 +26,9 @@ export default function Routing() {
 
 				<Switch>
 					{/*New routes here*/}
+					<Route path="/background">
+						<Background />
+					</Route>
 					<Route path="/">
 						<Landing />
 						<WhatCanIGetYou />
