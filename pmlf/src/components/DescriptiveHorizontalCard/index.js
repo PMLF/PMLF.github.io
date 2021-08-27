@@ -6,18 +6,19 @@ const Card = styled("div")`
 	width: 100%;
 	background-color: white;
 	margin: 40px 0;
+	padding: 40px;
 	border-radius: 20px;
 	display: flex;
 	align-items: flex-start;
 `;
 
 const Image = styled("img")`
-	margin: 40px;
 	height: 160px;
 `;
 
 const TextDiv = styled("div")`
 	font-family: ${darkTheme.fontFamily.main};
+	margin-left: 40px;
 `;
 
 const CardTitle = styled("p")`
