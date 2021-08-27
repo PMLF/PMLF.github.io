@@ -66,6 +66,8 @@ const Face = styled("img")`
 		margin: 40px auto 0;
 		max-width: 70%;
 	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+	}
 	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
 		max-width: 85%;
 	}

@@ -38,6 +38,12 @@ const NavStyled = styled("nav")`
 		justify-content: flex-end;
 		padding-right: 5%;
 	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+		display: flex;
+		&& {
+			justify-content: space-between;
+		}
+	}
 `;
 
 const Wrapper = styled("div")`
@@ -46,6 +52,9 @@ const Wrapper = styled("div")`
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+		margin: 0 16px;
+	}
 `;
 
 const HeaderContainer = styled("div")`
@@ -105,16 +114,22 @@ const MoreIcon = styled(SvgIcon)`
 		border-radius: 6px;
 	}
 	@media only screen and (min-width: calc(${darkTheme.breakpoint.lg} + 1px)) {
-		display: none !important;
+		&& {
+			display: none;
+		}
 	}
 	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
-		display: none !important;
+		&& {
+			display: none;
+		}
 	}
 `;
 
 const RightNavUl = styled("ul")`
 	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
-		display: none !important;
+		&& {
+			display: none;
+		}
 	}
 `;
 
@@ -131,7 +146,9 @@ const MenuIconStyled = styled(MenuIcon)`
 		background-color: #444;
 	}
 	@media only screen and (min-width: calc(${darkTheme.breakpoint.md} + 1px)) {
-		display: none !important;
+		&& {
+			display: none;
+		}
 	}
 `;
 
@@ -168,10 +185,8 @@ export default function Header({ isSidebarHidden, setIsSidebarHidden }) {
 					</SocialLeftContainer>
 					<SocialRightContainer>
 						{displayAllSocial ||
-						(window.innerWidth >
-							darkTheme.breakpoint.lg.slice(0, -2) &&
-							window.innerWidth >
-								darkTheme.breakpoint.md.slice(0, -2)) ? (
+						window.innerWidth >
+							darkTheme.breakpoint.md.slice(0, -2) ? (
 							<OptionalIcons>
 								<SocialMediaButton
 									href={CvDocument}
