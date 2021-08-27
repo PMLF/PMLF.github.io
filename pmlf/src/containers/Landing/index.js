@@ -12,7 +12,7 @@ const SectionStyled = styled("section")`
 	background-color: ${darkTheme.colors.greyDark};
 
 	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
-		height: 700px;
+		height: 600px;
 	}
 	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
 		height: 500px;
@@ -30,12 +30,17 @@ const SectionStyled = styled("section")`
 
 const Wrapper = styled("div")`
 	margin: auto;
-	height: 825px;
+	height: 100%;
+	max-height: 750px;
 	max-width: 1920px;
 	position: relative;
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
+
+	@media only screen and (min-width: ${darkTheme.breakpoint.lg}) {
+		padding: 50px 0 0;
+	}
 `;
 
 const Name = styled("h1")`
@@ -60,13 +65,11 @@ const Face = styled("img")`
 	margin: 20px auto 0;
 	position: relative;
 	z-index: 2;
-	max-width: 75%;
+	max-width: 600px;
 
 	@media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
 		margin: 40px auto 0;
-		max-width: 70%;
-	}
-	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+		max-width: 50%;
 	}
 	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
 		max-width: 85%;
