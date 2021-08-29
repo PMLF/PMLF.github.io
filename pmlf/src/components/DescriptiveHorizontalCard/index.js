@@ -17,6 +17,9 @@ const Card = styled("div")`
 	transition: all 0.2s;
 	&:hover {
 		transform: scale(0.99);
+		-webkit-box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
+		-moz-box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
+		box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
 	}
 `;
 

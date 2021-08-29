@@ -6,6 +6,7 @@ import styled from "styled-components";
 //Images
 import UALogo from "../../images/ua.jpg";
 import EditLogo from "../../images/edit.png";
+import TULLogo from "../../images/lodzka.png";
 
 const UlStyled = styled("ul")`
 	margin-bottom: 26px;
@@ -17,33 +18,6 @@ export default function Background() {
 			title="Background"
 			subtitle="Here you'll find some of skills and studies"
 		>
-			<DescriptiveHorizontalCard
-				imgSrc={UALogo}
-				imgAlt="Universidade de Aveiro logo"
-				title="Software Engineering Bachelor's degree"
-				subtitle="Universidade de Aveiro | DETI"
-			>
-				<UlStyled>
-					<li>
-						I chose Aveiro because it is{" "}
-						<strong>one of the best engineering schools</strong> in
-						Portugal, never disregarding the fact that it's a
-						beautiful place to live in.
-					</li>
-					<li>
-						I took my first steps as a dev here by participated in
-						many solo and team projects.
-					</li>
-					<li>
-						I went from Python to Java, learned a bit of Assembly
-						and about how compilers make our code do wonders. The
-						classes where I enjoyed myself the most were the ones
-						related to <strong>Web development</strong> and to{" "}
-						<strong>how users interact</strong> with the what we
-						code.
-					</li>
-				</UlStyled>
-			</DescriptiveHorizontalCard>
 			<DescriptiveHorizontalCard
 				imgSrc={EditLogo}
 				imgAlt="EDIT logo"
@@ -73,6 +47,67 @@ export default function Background() {
 							website
 						</a>{" "}
 						for the launch campaign of our app.
+					</li>
+				</UlStyled>
+			</DescriptiveHorizontalCard>
+			<DescriptiveHorizontalCard
+				imgSrc={UALogo}
+				imgAlt="Universidade de Aveiro logo"
+				title="Software Engineering Bachelor's degree"
+				subtitle="Universidade de Aveiro | DETI"
+			>
+				<UlStyled>
+					<li>
+						I chose Aveiro because it is{" "}
+						<strong>one of the best engineering schools</strong> in
+						Portugal, never disregarding the fact that it's a
+						beautiful place to live in.
+					</li>
+					<li>
+						I took my first steps as a dev here by participated in
+						many solo and team projects.
+					</li>
+					<li>
+						I went from Python to Java, learned a bit of Assembly
+						and about how compilers make our code do wonders. The
+						classes where I enjoyed myself the most were the ones
+						related to <strong>Web development</strong> and to{" "}
+						<strong>how users interact</strong> with the what we
+						code.
+					</li>
+				</UlStyled>
+			</DescriptiveHorizontalCard>
+			<DescriptiveHorizontalCard
+				imgSrc={TULLogo}
+				imgAlt="Politechnika Łódzka logo"
+				title="ERASMUS+ Mobility Semester"
+				subtitle="Politechnika Łódzka | TUŁ"
+			>
+				<UlStyled>
+					<li>
+						I had the opportunity to go and live in Łódź, Poland,
+						for a semester. I studied under foreign professors and
+						got to drink in the knowledge and culture of another
+						country in first person.
+					</li>
+					<li>
+						Going alone on this journey joined with the fact that I
+						was in a country where English isn't that popular and
+						whose language I knew close to nothing of meant I was
+						way out of my comfort zone and had a lot of work to do
+						to get myself around this completely new place. I loved
+						that about it because I got to grow a lot.
+					</li>
+					<li>
+						I came back knowing a bit of Polish, having made a whole
+						new array of friends, having visited different cities
+						and countries and having improved my skills, especially
+						my soft skills.
+					</li>
+					<li>
+						Another thing I learned was that I don't like pierogi
+						(Polish traditional dumplings) that much, I'd rather
+						have a big doner kebab! *shuckles*
 					</li>
 				</UlStyled>
 			</DescriptiveHorizontalCard>
