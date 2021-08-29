@@ -86,24 +86,26 @@ export default function Background() {
 			>
 				<UlStyled>
 					<li>
-						I had the opportunity to go and live in Łódź, Poland,
-						for a semester. I studied under foreign professors and
-						got to drink in the knowledge and culture of another
-						country in first person.
+						I had the opportunity to go and live in{" "}
+						<strong>Łódź, Poland</strong>, for a semester. I studied
+						under foreign professors and got to drink in the
+						knowledge and culture of another country in first
+						person.
 					</li>
 					<li>
 						Going alone on this journey joined with the fact that I
 						was in a country where English isn't that popular and
-						whose language I knew close to nothing of meant I was
-						way out of my comfort zone and had a lot of work to do
-						to get myself around this completely new place. I loved
-						that about it because I got to grow a lot.
+						whose language I knew close to nothing of meant I was{" "}
+						<strong>way out of my comfort zone</strong> and had a
+						lot of work to do to get myself around this completely
+						new place. I loved that about it because I got to grow a
+						lot.
 					</li>
 					<li>
 						I came back knowing a bit of Polish, having made a whole
 						new array of friends, having visited different cities
 						and countries and having improved my skills, especially
-						my soft skills.
+						my <strong>soft skills</strong>.
 					</li>
 					<li>
 						Another thing I learned was that I don't like pierogi
@@ -124,17 +126,18 @@ export default function Background() {
 						American and Canadian teachers.
 					</li>
 					<li>
-						These days it is critical to have great fluency in
-						English and this school helped me massively getting
-						there.
+						These days it is critical to have great{" "}
+						<strong>fluency in English</strong> and this school
+						helped me massively getting there.
 					</li>
 					<li>
-						After a few different exams, I got the C1 level
-						certified by Cambridge. I got a 196 mark out of 210
-						after being evaluated in many aspects such as reading,
-						writing, listening and speaking. Four points away from a
-						200 mark which would mean me getting the C2 level, but I
-						am proud of my achievement there.
+						After a few different exams, I got the{" "}
+						<strong>C1 level certified by Cambridge</strong>. I got
+						a <strong>196 mark out of 210</strong> after being
+						evaluated in many aspects such as reading, writing,
+						listening and speaking. Four points away from a 200 mark
+						which would mean me getting the C2 level, but I am proud
+						of my achievement there.
 					</li>
 				</UlStyled>
 			</DescriptiveHorizontalCard>
