@@ -5,6 +5,7 @@ import WhatCanIGetYou from "../WhatCanIGetYou";
 import WorkingOnIt from "../../components/WorkingOnIt";
 import Header from "../Header";
 import Background from "../Background";
+import AuthorNote from "../AuthorNote";
 
 // Sidebar
 import SidebarMobile from "../SidebarMobile";
@@ -32,6 +33,7 @@ export default function Routing() {
 					<Route path="/">
 						<Landing />
 						<WhatCanIGetYou />
+						<AuthorNote />
 						<WorkingOnIt />
 					</Route>
 				</Switch>

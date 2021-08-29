@@ -56,11 +56,16 @@ export default function DescriptiveHorizontalCard({
 	title,
 	subtitle,
 	children,
+	roundImg = false,
 }) {
 	return (
 		<Card>
 			<CardTop>
-				<Image src={imgSrc} alt={imgAlt} />
+				<Image
+					src={imgSrc}
+					alt={imgAlt}
+					style={roundImg ? { borderRadius: "50%" } : null}
+				/>
 				<div>
 					<CardTitle>{title}</CardTitle>
 					<CardSubtitle>{subtitle}</CardSubtitle>
