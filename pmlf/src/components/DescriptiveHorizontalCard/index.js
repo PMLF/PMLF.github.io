@@ -11,6 +11,13 @@ const Card = styled("div")`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	-webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+	transition: all 0.2s;
+	&:hover {
+		transform: scale(0.99);
+	}
 `;
 
 const CardTop = styled("div")`
