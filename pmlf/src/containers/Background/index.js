@@ -7,6 +7,7 @@ import styled from "styled-components";
 import UALogo from "../../images/ua.jpg";
 import EditLogo from "../../images/edit.png";
 import TULLogo from "../../images/lodzka.png";
+import EngCentreLogo from "../../images/engcentre.jpg";
 
 const UlStyled = styled("ul")`
 	margin-bottom: 26px;
@@ -108,6 +109,32 @@ export default function Background() {
 						Another thing I learned was that I don't like pierogi
 						(Polish traditional dumplings) that much, I'd rather
 						have a big doner kebab! *shuckles*
+					</li>
+				</UlStyled>
+			</DescriptiveHorizontalCard>
+			<DescriptiveHorizontalCard
+				imgSrc={EngCentreLogo}
+				imgAlt="The English Centre logo"
+				title="Certificate in Advanced English | C1 level"
+				subtitle="The English Centre"
+			>
+				<UlStyled>
+					<li>
+						For six years I had English classes with Brittish,
+						American and Canadian teachers.
+					</li>
+					<li>
+						These days it is critical to have great fluency in
+						English and this school helped me massively getting
+						there.
+					</li>
+					<li>
+						After a few different exams, I got the C1 level
+						certified by Cambridge. I got a 196 mark out of 210
+						after being evaluated in many aspects such as reading,
+						writing, listening and speaking. Four points away from a
+						200 mark which would mean me getting the C2 level, but I
+						am proud of my achievement there.
 					</li>
 				</UlStyled>
 			</DescriptiveHorizontalCard>
