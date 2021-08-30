@@ -5,8 +5,7 @@ import { darkTheme } from "../../themes";
 const SectionStyled = styled("section")`
 	background-color: ${darkTheme.colors.greyLight};
 	position: relative;
-	padding: 0 10%;
-	border-bottom: solid 1px black; //remove later
+	padding: 20px 10%;
 
 	h1,
 	h2 {
@@ -32,7 +31,7 @@ export default function SectionWithTitle({ title, subtitle, children }) {
 	return (
 		<SectionStyled>
 			<Wrapper>
-				<h1>{title}</h1>
+				{title && <h1>{title}</h1>}
 				{subtitle && <h2>{subtitle}</h2>}
 				{children}
 			</Wrapper>

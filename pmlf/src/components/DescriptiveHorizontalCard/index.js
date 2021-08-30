@@ -11,6 +11,7 @@ const Card = styled("div")`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	${({ bigImg }) => bigImg && "flex-direction: row;"}
 	-webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
 	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
@@ -32,8 +33,9 @@ const CardTop = styled("div")`
 `;
 
 const Image = styled("img")`
-	height: 80px;
 	margin-right: 20px;
+	${({ roundImg }) => roundImg && "border-radius: 50%;"}
+	${({ bigImg }) => (bigImg ? "width: 200px;" : "width: 80px;")}
 `;
 
 const CardTitle = styled("p")`
@@ -48,6 +50,8 @@ const CardSubtitle = styled("p")`
 
 const TextDiv = styled("div")`
 	font-family: ${darkTheme.fontFamily.main};
+	${({ bigImg }) =>
+		bigImg && " width: calc(100% - 240px); margin-left: 20px;"}
 `;
 
 export default function DescriptiveHorizontalCard({
@@ -57,15 +61,28 @@ export default function DescriptiveHorizontalCard({
 	subtitle,
 	children,
 	roundImg = false,
+	imgFullHeight = false,
 }) {
-	return (
+	return imgFullHeight ? (
+		<Card bigImg={imgFullHeight}>
+			<Image
+				src={imgSrc}
+				alt={imgAlt}
+				roundImg={roundImg}
+				bigImg={imgFullHeight}
+			/>
+			<TextDiv bigImg={imgFullHeight}>
+				<div>
+					<CardTitle>{title}</CardTitle>
+					<CardSubtitle>{subtitle}</CardSubtitle>
+				</div>
+				{children}
+			</TextDiv>
+		</Card>
+	) : (
 		<Card>
 			<CardTop>
-				<Image
-					src={imgSrc}
-					alt={imgAlt}
-					style={roundImg ? { borderRadius: "50%" } : null}
-				/>
+				<Image src={imgSrc} alt={imgAlt} />
 				<div>
 					<CardTitle>{title}</CardTitle>
 					<CardSubtitle>{subtitle}</CardSubtitle>

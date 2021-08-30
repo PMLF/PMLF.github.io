@@ -14,17 +14,17 @@ export default function AuthorNote() {
 	return (
 		<SectionWithTitle>
 			<DescriptiveHorizontalCard
-				id="zzzzzzzzzzzzzzzzz"
 				imgSrc={AuthorImg}
 				imgAlt="PMLF's picture"
 				title="A note about this website"
 				roundImg
+				imgFullHeight
 			>
 				<UlStyled>
 					<li>
 						Since I was a little kid I always got fascinated about
 						how a website could be created and had no idea how to do
-						one.
+						one. Now I'm proud I got my own!
 					</li>
 					<li>
 						Here I have a space to show my journey to those who
