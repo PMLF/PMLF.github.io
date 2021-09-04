@@ -39,11 +39,14 @@ export default function Background() {
 						philosophy of reutilization.
 					</li>
 					<li>
-						The last project involved Centro Cultural de Belém (
-						<a href="ccb.pt">ccb.pt</a>), and it consisted of
-						preparing the launch of an app to bring this brand to
-						the digital world. I worked closely with UIUX and
-						Marketing teams as their sole developer and created a{" "}
+						The last project involved{" "}
+						<a href="https://www.ccb.pt/">
+							Centro Cultural de Belém
+						</a>{" "}
+						, and it consisted of preparing the launch of an app to
+						bring this brand to the digital world. I worked closely
+						with UIUX and Marketing teams as their sole developer
+						and created a{" "}
 						<a href="https://github.com/PMLF/centro-cultural-belem-projeto360">
 							website
 						</a>{" "}

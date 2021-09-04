@@ -16,20 +16,20 @@ export default function AuthorNote() {
 			<DescriptiveHorizontalCard
 				imgSrc={AuthorImg}
 				imgAlt="PMLF's picture"
-				title="A note about this website"
+				title="About this website"
 				roundImg
 				imgFullHeight
 			>
 				<UlStyled>
 					<li>
-						Since I was a little kid I always got fascinated about
-						how a website could be created and had no idea how to do
-						one. Now I'm proud I got my own!
+						Since I was a kid I always got fascinated by websites
+						and how they were created. I had no idea how they were
+						made.
 					</li>
 					<li>
-						Here I have a space to show my journey to those who
+						Here I have a space to tell my journey to those who
 						might be interested. From school, to work and even
-						hobbies, I'm sharing it all in this space.
+						hobbies, I'm sharing it all here.
 					</li>
 					<li>
 						This website was developed by me using React JS. It is
