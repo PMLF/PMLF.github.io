@@ -19,6 +19,24 @@ const SectionStyled = styled("section")`
 	h1 {
 		font-size: 50px;
 		padding-top: 50px;
+
+		@media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
+			font-size: 36px;
+		}
+		@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+			font-size: 32px;
+		}
+		@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+			font-size: 28px;
+		}
+	}
+	h2 {
+		@media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
+			font-size: 20px;
+		}
+		@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+			font-size: 18px;
+		}
 	}
 `;
 

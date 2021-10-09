@@ -7,7 +7,7 @@ import { SvgIcon } from "@material-ui/core";
 const Anchor = styled("a")`
 	height: 500px;
 	width: 30%;
-	margin: 5% 50px;
+	margin: 5% 0;
 	text-decoration: inherit;
 	color: inherit;
 
@@ -19,6 +19,20 @@ const Anchor = styled("a")`
 			transition: background-size 5s;
 			background-size: 105%;
 		}
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
+		width: 60%;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+		width: 70%;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.md}) {
+		width: 80%;
+		height: 400px;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+		width: 100%;
+		height: 400px;
 	}
 `;
 
@@ -40,6 +54,19 @@ const Title = styled("p")`
 	margin: 0;
 	font-weight: 600;
 	font-family: ${darkTheme.fontFamily.main};
+
+	@media only screen and (max-width: ${darkTheme.breakpoint.xl}) {
+		font-size: 20px;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
+		font-size: 24px;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+		font-size: 20px;
+	}
+	@media only screen and (max-width: ${darkTheme.breakpoint.xs}) {
+		font-size: 16px;
+	}
 `;
 
 const ArrowDiv = styled("div")`
@@ -64,6 +91,15 @@ const ArrowDiv = styled("div")`
 		-moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 		transition: all 0.3s;
+	}
+
+	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
+		width: 30px;
+		height: 30px;
+		right: 30px;
+		svg {
+			font-size: 18px;
+		}
 	}
 `;
 
