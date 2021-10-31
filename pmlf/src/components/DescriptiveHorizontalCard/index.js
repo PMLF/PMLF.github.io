@@ -4,7 +4,7 @@ import { darkTheme } from "../../themes";
 
 const Card = styled("div")`
 	width: calc(100% - 80px);
-	background-color: white;
+	background-color: ${darkTheme.colors.white1};
 	margin: 40px 0;
 	padding: 40px;
 	border-radius: 20px;
@@ -82,7 +82,7 @@ export default function DescriptiveHorizontalCard({
 	) : (
 		<Card>
 			<CardTop>
-				<Image src={imgSrc} alt={imgAlt} />
+				<Image src={imgSrc} roundImg={roundImg} alt={imgAlt} />
 				<div>
 					<CardTitle>{title}</CardTitle>
 					<CardSubtitle>{subtitle}</CardSubtitle>

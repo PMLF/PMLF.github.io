@@ -10,15 +10,18 @@ const Anchor = styled("a")`
 	margin: 5% 0;
 	text-decoration: inherit;
 	color: inherit;
+	background-color: ${darkTheme.colors.white1};
+	border-radius: 20px;
+	-webkit-box-shadow: 9px 11px 109px -30px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 9px 11px 109px -30px rgba(0, 0, 0, 0.6);
+	box-shadow: 9px 11px 109px -30px rgba(0, 0, 0, 0.6);
 
 	&:hover {
 		transform: scale(1.02);
-		transition: transform 0.3s;
-
-		div {
-			transition: background-size 5s;
-			background-size: 105%;
-		}
+		transition: all 0.3s;
+		-webkit-box-shadow: 9px 11px 171px -56px rgba(0, 0, 0, 0.6);
+		-moz-box-shadow: 9px 11px 171px -56px rgba(0, 0, 0, 0.6);
+		box-shadow: 9px 11px 171px -56px rgba(0, 0, 0, 0.6);
 	}
 	@media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
 		width: 60%;
@@ -39,12 +42,10 @@ const Anchor = styled("a")`
 const DivStyled = styled("div")`
 	height: 100%;
 	width: 100%;
-	background-color: red;
-	border-radius: 20px;
 	position: relative;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
+	background-position: 90% 100%;
+	background-size: contain;
 `;
 
 const Title = styled("p")`

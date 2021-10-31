@@ -1,16 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SectionWithTitle from "../SectionWithTitle";
 import DescriptiveHorizontalCard from "../../components/DescriptiveHorizontalCard";
 import styled from "styled-components";
 
 //Images
 import AuthorImg from "../../images/leeds.jpg";
+import { darkTheme } from "../../themes";
 
 const UlStyled = styled("ul")`
 	margin-bottom: 26px;
 `;
 
+const AnchorStyled = styled("a")`
+	color: ${darkTheme.colors.blue1};
+	text-decoration: none;
+	font-weight: 700;
+	background-color: ${darkTheme.colors.greyLight};
+	padding: 2px 4px;
+	border-radius: 4px;
+	&:hover {
+		bacground-color: ${darkTheme.colors.greyMid};
+	}
+`;
+
 export default function AuthorNote() {
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+	useEffect(() => {
+		function handleWidthResize() {
+			setWindowWidth(window.innerWidth);
+		}
+
+		window.addEventListener("resize", handleWidthResize);
+		return () =>
+			window.removeEventListener("resize", () => handleWidthResize);
+	}, []);
+
 	return (
 		<SectionWithTitle>
 			<DescriptiveHorizontalCard
@@ -18,29 +43,34 @@ export default function AuthorNote() {
 				imgAlt="PMLF's picture"
 				title="About this website"
 				roundImg
-				imgFullHeight
+				imgFullHeight={windowWidth >= 768}
 			>
 				<UlStyled>
 					<li>
-						Since I was a kid I always got fascinated by websites
-						and how they were created. I had no idea how they were
-						made.
+						This is where I share my love for football, what I do
+						for work, among other things.
 					</li>
 					<li>
-						Here I have a space to tell my journey to those who
-						might be interested. From school, to work and even
-						hobbies, I'm sharing it all here.
-					</li>
-					<li>
-						This website was developed by me using React JS. It is
-						open source and you can find all the code{" "}
-						<a href="https://github.com/PMLF/PMLF.github.io">
+						Everything was developed by me using{" "}
+						<strong>React JS</strong>. It is{" "}
+						<strong>open source</strong> and you can find all the
+						code{" "}
+						<AnchorStyled href="https://github.com/PMLF/PMLF.github.io">
 							here
-						</a>
+						</AnchorStyled>
 						.
 					</li>
 					<li>
-						Feel free to send me feature or improvement suggestions!
+						All the vectorized images were done in{" "}
+						<strong>Figma</strong> and they may or may not have
+						taken me as much time as the rest of the website. 😁
+					</li>
+					<li>
+						Feel free to{" "}
+						<AnchorStyled href="https://www.linkedin.com/in/pedromlfonseca/">
+							get in touch
+						</AnchorStyled>
+						!
 					</li>
 				</UlStyled>
 			</DescriptiveHorizontalCard>

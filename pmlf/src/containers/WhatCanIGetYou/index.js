@@ -4,6 +4,11 @@ import SectionWithTitle from "../SectionWithTitle";
 import TopicCard from "../../components/TopicCard";
 import { darkTheme } from "../../themes";
 
+// Images
+import background from "../../images/background.png";
+import work from "../../images/work.png";
+import freeTime from "../../images/freetime.png";
+
 const CardsSection = styled("section")`
 	display: flex;
 	flex-direction: row;
@@ -22,9 +27,13 @@ export default function WhatCanIGetYou() {
 			subtitle="People come here for all sorts of reasons"
 		>
 			<CardsSection>
-				<TopicCard title="Background" link="/background" />
-				<TopicCard title="Work" />
-				<TopicCard title="Free time" />
+				<TopicCard
+					title="Background"
+					link="/background"
+					image={background}
+				/>
+				<TopicCard title="Work" image={work} />
+				<TopicCard title="Free time" image={freeTime} />
 			</CardsSection>
 		</SectionWithTitle>
 	);
