@@ -19,6 +19,7 @@ import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import SpotifyIcon from "../../images/spotify.svg";
 import CvIcon from "../../images/cv_icon_white.svg";
+import SportsSoccerIcon from "@material-ui/icons/SportsSoccer";
 
 const SidebarContainer = styled("div")`
 	@media only screen and (min-width: calc(${darkTheme.breakpoint.md} + 1px)) {
@@ -102,6 +103,11 @@ export default function SidebarMobile({ hidden, hiddenToggle }) {
 					text="Background"
 				/>
 				<NavBarButton link="/work" icon={CodeIcon} text="Work" />
+				<NavBarButton
+					link="/freetime"
+					icon={SportsSoccerIcon}
+					text="Free time"
+				/>
 				<HrStyled />
 				<SocialMediaButton
 					href="https://www.linkedin.com/in/pedromlfonseca/"

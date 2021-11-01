@@ -6,6 +6,8 @@ import WorkingOnIt from "../../components/WorkingOnIt";
 import Header from "../Header";
 import Background from "../Background";
 import AuthorNote from "../AuthorNote";
+import Work from "../Work";
+import FreeTime from "../FreeTime";
 
 // Sidebar
 import SidebarMobile from "../SidebarMobile";
@@ -30,11 +32,16 @@ export default function Routing() {
 					<Route path="/background">
 						<Background />
 					</Route>
+					<Route path="/work">
+						<Work />
+					</Route>
+					<Route path="/freetime">
+						<FreeTime />
+					</Route>
 					<Route path="/">
 						<Landing />
 						<WhatCanIGetYou />
 						<AuthorNote />
-						<WorkingOnIt />
 					</Route>
 				</Switch>
 			</div>

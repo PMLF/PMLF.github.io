@@ -25,6 +25,7 @@ import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
 import CodeIcon from "@material-ui/icons/Code";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import MenuIcon from "@material-ui/icons/Menu";
+import SportsSoccerIcon from "@material-ui/icons/SportsSoccer";
 
 const NavStyled = styled("nav")`
 	background-color: ${darkTheme.colors.greyDarker};
@@ -232,6 +233,11 @@ export default function Header({ isSidebarHidden, setIsSidebarHidden }) {
 						text="Background"
 					/>
 					<NavBarButton link="/work" icon={CodeIcon} text="Work" />
+					<NavBarButton
+						link="/freetime"
+						icon={SportsSoccerIcon}
+						text="Free"
+					/>
 				</RightNavUl>
 			</Wrapper>
 			<MenuIconStyled
