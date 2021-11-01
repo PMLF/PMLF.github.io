@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "../Landing";
 import WhatCanIGetYou from "../WhatCanIGetYou";
-import WorkingOnIt from "../../components/WorkingOnIt";
 import Header from "../Header";
 import Background from "../Background";
 import AuthorNote from "../AuthorNote";
