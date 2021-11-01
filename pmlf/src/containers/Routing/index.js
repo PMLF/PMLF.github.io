@@ -10,6 +10,7 @@ import FreeTime from "../FreeTime";
 
 // Sidebar
 import SidebarMobile from "../SidebarMobile";
+import Footer from "../../components/Footer";
 
 export default function Routing() {
 	const [isSidebarHidden, setIsSidebarHidden] = useState(true);
@@ -43,6 +44,7 @@ export default function Routing() {
 						<AuthorNote />
 					</Route>
 				</Switch>
+				<Footer />
 			</div>
 		</Router>
 	);

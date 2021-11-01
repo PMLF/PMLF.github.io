@@ -65,13 +65,6 @@ export default function AuthorNote() {
 						<strong>Figma</strong> and they may or may not have
 						taken me as much time as the rest of the website. 😁
 					</li>
-					<li>
-						Feel free to{" "}
-						<AnchorStyled href="https://www.linkedin.com/in/pedromlfonseca/">
-							get in touch
-						</AnchorStyled>
-						!
-					</li>
 				</UlStyled>
 			</DescriptiveHorizontalCard>
 		</SectionWithTitle>
