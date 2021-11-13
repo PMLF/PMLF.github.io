@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { darkTheme } from "../../themes";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import { SvgIcon } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
-const Anchor = styled("a")`
+const LinkStyled = styled(Link)`
 	height: 500px;
 	width: 30%;
 	margin: 5% 0;
@@ -106,13 +107,13 @@ const ArrowDiv = styled("div")`
 
 export default function TopicCard({ title, image, link }) {
 	return (
-		<Anchor href={link}>
+		<LinkStyled to={link}>
 			<DivStyled style={{ backgroundImage: `url(${image})` }}>
 				<Title>{title}</Title>
 				<ArrowDiv>
 					<SvgIcon component={ArrowForwardIcon} />
 				</ArrowDiv>
 			</DivStyled>
-		</Anchor>
+		</LinkStyled>
 	);
 }

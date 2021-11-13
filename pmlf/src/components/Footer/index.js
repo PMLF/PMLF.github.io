@@ -32,6 +32,7 @@ const Button = styled("button")`
 	display: flex;
 	align-items: center;
 	padding: 8px 12px;
+	cursor: pointer;
 
 	&:last-of-type {
 		margin-left: 20px;

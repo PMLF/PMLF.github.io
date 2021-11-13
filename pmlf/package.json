@@ -1,5 +1,5 @@
 {
-	"homepage": "https://pmlf.github.io/pmlf.github.io",
+	"homepage": "https://pmlf.github.io/",
 	"name": "pmlf",
 	"version": "0.1.0",
 	"private": true,
@@ -36,7 +36,7 @@
 	},
 	"scripts": {
 		"pre-deploy": "yarn build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -b gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",

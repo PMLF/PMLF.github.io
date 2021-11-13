@@ -32,8 +32,8 @@ export default function WhatCanIGetYou() {
 					link="/background"
 					image={background}
 				/>
-				<TopicCard title="Work" image={work} />
-				<TopicCard title="Free time" image={freeTime} />
+				<TopicCard title="Work" link="/work" image={work} />
+				<TopicCard title="Free time" link="freetime" image={freeTime} />
 			</CardsSection>
 		</SectionWithTitle>
 	);
