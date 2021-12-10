@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { darkTheme } from "../../themes";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import { SvgIcon } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 const LinkStyled = styled(Link)`
@@ -13,16 +11,16 @@ const LinkStyled = styled(Link)`
 	color: inherit;
 	background-color: ${darkTheme.colors.white1};
 	border-radius: 20px;
-	-webkit-box-shadow: 9px 11px 109px -30px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: 9px 11px 109px -30px rgba(0, 0, 0, 0.6);
-	box-shadow: 9px 11px 109px -30px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: ${darkTheme.cards.boxShadow.default};
+	-moz-box-shadow: ${darkTheme.cards.boxShadow.default};
+	box-shadow: ${darkTheme.cards.boxShadow.default};
 
 	&:hover {
-		transform: scale(1.02);
+		transform: ${darkTheme.cards.transform};
 		transition: all 0.3s;
-		-webkit-box-shadow: 9px 11px 171px -56px rgba(0, 0, 0, 0.6);
-		-moz-box-shadow: 9px 11px 171px -56px rgba(0, 0, 0, 0.6);
-		box-shadow: 9px 11px 171px -56px rgba(0, 0, 0, 0.6);
+		-webkit-box-shadow: ${darkTheme.cards.boxShadow.hover};
+		-moz-box-shadow: ${darkTheme.cards.boxShadow.hover};
+		box-shadow: ${darkTheme.cards.boxShadow.hover};
 	}
 	@media only screen and (max-width: ${darkTheme.breakpoint.lg}) {
 		width: 60%;
@@ -71,48 +69,11 @@ const Title = styled("p")`
 	}
 `;
 
-const ArrowDiv = styled("div")`
-	background-color: white;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 40px;
-	right: 40px;
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-
-	&:hover {
-		transform: scale(1.1);
-		background-color: ${darkTheme.colors.greyLight};
-		-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-		transition: all 0.3s;
-	}
-
-	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
-		width: 30px;
-		height: 30px;
-		right: 30px;
-		svg {
-			font-size: 18px;
-		}
-	}
-`;
-
 export default function TopicCard({ title, image, link }) {
 	return (
 		<LinkStyled to={link}>
 			<DivStyled style={{ backgroundImage: `url(${image})` }}>
 				<Title>{title}</Title>
-				<ArrowDiv>
-					<SvgIcon component={ArrowForwardIcon} />
-				</ArrowDiv>
 			</DivStyled>
 		</LinkStyled>
 	);

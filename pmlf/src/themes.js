@@ -29,6 +29,13 @@ const darkTheme = {
 	fontFamily: {
 		main: `"Poppins", "Lato", "Roboto", "sans-serif"`,
 	},
+	cards: {
+		boxShadow: {
+			default: "9px 11px 109px -30px rgba(0, 0, 0, 0.6)",
+			hover: "9px 11px 171px -56px rgba(0, 0, 0, 0.6)",
+		},
+		transform: "scale(1.01)",
+	},
 };
 
 export { darkTheme };

@@ -12,15 +12,16 @@ const Card = styled("div")`
 	align-items: center;
 	flex-direction: column;
 	${({ bigImg }) => bigImg && "flex-direction: row;"}
-	-webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
-	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
-	transition: all 0.2s;
+	-webkit-box-shadow: ${darkTheme.cards.boxShadow.default};
+	-moz-box-shadow: ${darkTheme.cards.boxShadow.default};
+	box-shadow: ${darkTheme.cards.boxShadow.default};
+
 	&:hover {
-		transform: scale(0.99);
-		-webkit-box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
-		-moz-box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
-		box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.4);
+		transform: ${darkTheme.cards.transform};
+		transition: all 0.3s;
+		-webkit-box-shadow: ${darkTheme.cards.boxShadow.hover};
+		-moz-box-shadow: ${darkTheme.cards.boxShadow.hover};
+		box-shadow: ${darkTheme.cards.boxShadow.hover};
 	}
 `;
 

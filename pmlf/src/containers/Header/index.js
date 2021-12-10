@@ -192,7 +192,7 @@ export default function Header({ isSidebarHidden, setIsSidebarHidden }) {
 								<SocialMediaButton
 									href={CvDocument}
 									icon={CvIcon}
-									colorArray={["#CD0001", "#CD4F44"]}
+									colorArray={[]}
 									borderRadius="6px"
 									label="CV"
 									alt="CV download link"
