@@ -4,10 +4,10 @@ import { darkTheme } from "../../themes";
 
 // Buttons
 import NavBarButton from "../../components/NavBarButton";
-import SocialMediaButton from "../../components/SocialMediaButton/SocialMediaButton";
+import SocialMediaButton from "../../components/SocialMediaButton";
 
 // Signature
-import NavBarImg from "../../components/NavBarImg/NavBarImg";
+import NavBarImg from "../../components/NavBarImg";
 import Signature from "../../images/signature_white.svg";
 
 // Documents

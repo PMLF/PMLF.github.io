@@ -4,7 +4,7 @@ import { darkTheme } from "../../themes";
 
 // Buttons
 import NavBarButton from "../../components/NavBarButton";
-import SocialMediaButton from "../../components/SocialMediaButton/SocialMediaButton";
+import SocialMediaButton from "../../components/SocialMediaButton";
 
 // Documents
 import CvDocument from "../../assets/CV_PEDROFONSECA_en_2021.pdf";
