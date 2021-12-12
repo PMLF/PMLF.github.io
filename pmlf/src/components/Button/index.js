@@ -6,7 +6,6 @@ import { darkTheme } from "../../themes";
 const ButtonStyled = styled("button")`
 	font-size: 20px;
 	line-height: 50px;
-	margin-left: 20px;
 	background-color: ${darkTheme.colors.greyMid};
 	color: ${darkTheme.colors.white1};
 	border-radius: 4px;

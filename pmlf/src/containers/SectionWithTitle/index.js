@@ -5,7 +5,7 @@ import { darkTheme } from "../../themes";
 const SectionStyled = styled("section")`
 	background-color: ${darkTheme.colors.greyLight};
 	position: relative;
-	padding: 20px 10%;
+	padding: 10px 10% 60px 10%;
 
 	h1,
 	h2 {

@@ -7,6 +7,7 @@ import Background from "../Background";
 import AuthorNote from "../AuthorNote";
 import Work from "../Work";
 import FreeTime from "../FreeTime";
+import ContactForm from "../ContactForm";
 
 // Sidebar
 import SidebarMobile from "../SidebarMobile";
@@ -42,6 +43,7 @@ export default function Routing() {
 						<Landing />
 						<WhatCanIGetYou />
 						<AuthorNote />
+						<ContactForm />
 					</Route>
 				</Switch>
 				<Footer />

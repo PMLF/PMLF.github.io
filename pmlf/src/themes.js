@@ -20,6 +20,8 @@ const darkTheme = {
 		red2: "#9E1D0E",
 		yellow1: "#EBCD10",
 		brown1: "#9E913C",
+		placeholderText: "#B3B3B3",
+		requiredAsterisk: "#E68A00",
 	},
 	fontWeight: {
 		light: 100,
