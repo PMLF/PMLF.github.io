@@ -12,6 +12,10 @@ const FooterStyled = styled("footer")`
 	display: flex;
 	justify-content: center;
 	padding: 40px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 
 	@media only screen and (max-width: ${darkTheme.breakpoint.sm}) {
 		flex-direction: column;
