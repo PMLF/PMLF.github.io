@@ -207,7 +207,7 @@ export default function Header({ isSidebarHidden, setIsSidebarHidden }) {
 									alt="Spotify link"
 								/>
 								<SocialMediaButton
-									href="https://www.instagram.com/pmlfonseca/"
+									href="https://www.instagram.com/pmlfonsecadev/"
 									icon={InstagramIcon}
 									colorArray={[
 										"#3E6BC9",

@@ -148,7 +148,7 @@ export default function SidebarMobile({ hidden, hiddenToggle }) {
 					alt="Spotify link"
 				/>
 				<SocialMediaButton
-					href="https://www.instagram.com/pmlfonseca/"
+					href="https://www.instagram.com/pmlfonseca.dev/"
 					icon={InstagramIcon}
 					colorArray={["#3E6BC9", "#B63A9D", "#FC5245", "#FEDA55"]}
 					borderRadius="12px"
