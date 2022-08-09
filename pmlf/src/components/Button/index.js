@@ -30,10 +30,14 @@ const ButtonStyled = styled("button")`
 	}
 `;
 
+const SvgIconStyled = styled(SvgIcon)`
+	margin-right: 10px;
+`;
+
 export default function Button({ icon, label }) {
 	return (
 		<ButtonStyled>
-			<SvgIcon component={icon} />
+			<SvgIconStyled component={icon} />
 			<p>{label}</p>
 		</ButtonStyled>
 	);

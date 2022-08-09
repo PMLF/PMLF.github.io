@@ -19,7 +19,7 @@ const AnchorStyled = styled("a")`
 	padding: 2px 4px;
 	border-radius: 4px;
 	&:hover {
-		bacground-color: ${darkTheme.colors.greyMid};
+		background-color: ${darkTheme.colors.greyMid};
 	}
 `;
 

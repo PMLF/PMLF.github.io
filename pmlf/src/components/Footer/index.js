@@ -5,7 +5,6 @@ import { SvgIcon } from "@material-ui/core";
 
 // Icons
 import QuestionAnswerIcon from "@material-ui/icons/QuestionAnswer";
-import CopyrightIcon from "@material-ui/icons/Copyright";
 
 const FooterStyled = styled("footer")`
 	background-color: ${darkTheme.colors.greyDarker};
@@ -47,10 +46,6 @@ const Button = styled("button")`
 	}
 `;
 
-const SvgIconStyled = styled(SvgIcon)`
-	margin-right: 10px;
-`;
-
 const Anchor = styled("a")`
 	text-decoration: none;
 `;
@@ -63,14 +58,13 @@ export default function Footer() {
 				target="_blank"
 			>
 				<Button>
-					<SvgIconStyled component={QuestionAnswerIcon} />
+					<SvgIcon component={QuestionAnswerIcon} />
 					Let's get in touch!
 				</Button>
 			</Anchor>
 			<Anchor href="https://github.com/PMLF" target="_blank">
 				<Button>
-					<SvgIconStyled component={CopyrightIcon} />
-					PMLF
+					PMLF™
 				</Button>
 			</Anchor>
 		</FooterStyled>
