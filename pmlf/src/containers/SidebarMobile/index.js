@@ -7,7 +7,7 @@ import NavBarButton from "../../components/NavBarButton";
 import SocialMediaButton from "../../components/SocialMediaButton";
 
 // Documents
-import CvDocument from "../../assets/CV_PEDROFONSECA_en_2021.pdf";
+import CvDocument from "../../assets/CV_PEDROFONSECA.pdf";
 
 // Icons
 import CloseIcon from "@material-ui/icons/Close";
@@ -137,7 +137,7 @@ export default function SidebarMobile({ hidden, hiddenToggle }) {
 					borderRadius="6px"
 					label="CV"
 					alt="CV download link"
-					download="CV_PEDROFONSECA_en_2021.pdf"
+					download="CV_PEDROFONSECA.pdf"
 				/>
 				<SocialMediaButton
 					href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"

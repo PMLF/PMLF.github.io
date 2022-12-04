@@ -11,7 +11,7 @@ import NavBarImg from "../../components/NavBarImg";
 import Signature from "../../images/signature_white.svg";
 
 // Documents
-import CvDocument from "../../assets/CV_PEDROFONSECA_en_2021.pdf";
+import CvDocument from "../../assets/CV_PEDROFONSECA.pdf";
 
 // Icons
 import SvgIcon from "@material-ui/core/SvgIcon";
@@ -196,7 +196,7 @@ export default function Header({ isSidebarHidden, setIsSidebarHidden }) {
 									borderRadius="6px"
 									label="CV"
 									alt="CV download link"
-									download="CV_PEDROFONSECA_en_2021.pdf"
+									download="CV_PEDROFONSECA.pdf"
 								/>
 								<SocialMediaButton
 									href="https://open.spotify.com/user/21xkghmsk6kr5jao2aniugvda?si=a05ea3991aac468d"
