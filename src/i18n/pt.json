@@ -1,0 +1,204 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "work": "Trabalho",
+    "experience": "Experiência",
+    "art": "Arte",
+    "teaching": "Ensino",
+    "beyond": "Para Além do Código",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tagline": "Tecnologia. Arte. Emoção."
+  },
+  "roles": {
+    "frontend": "Front End Developer",
+    "teacher": "Professor",
+    "founder": "Fundador",
+    "illustrator": "Ilustrador Desportivo"
+  },
+  "about": {
+    "title": "Sobre",
+    "bio": "Apaixonado por clean code, arte e futebol. Trabalho como consultor há {years}+ anos, desenho há {artYears}+ anos. Trago energia, adaptabilidade e atenção ao detalhe a cada projeto em que trabalho.",
+    "philosophy": "Filosofia",
+    "philosophyText": "Preocupo-me com o que o produto faz sentir e como o utilizador se pode ligar a ele, não apenas que funcione. Uso IA no meu workflow, não como muleta, mas para aumentar a produtividade e identificar edge cases mais cedo.",
+    "stats": {
+      "years": "Anos de Experiência",
+      "clients": "Clientes",
+      "sectors": "Setores"
+    }
+  },
+  "work": {
+    "title": "Trabalho",
+    "subtitle": "Áreas de Trabalho",
+    "software": {
+      "name": "Desenvolvimento de Software",
+      "description": "Construção de aplicações web performantes, acessíveis e bonitas com React, TypeScript e Next.js. Já fiz desde plataformas e-commerce usadas diariamente por milhares de utilizadores a ferramentas de segurança que protegem milhões de dispositivos e plataformas internas de LLM empresariais."
+    },
+    "illustrations": {
+      "name": "Ilustrações",
+      "description": "Ilustrador desportivo autodidata com mais de 700 clientes satisfeitos. Arte de futebol, merchandise e comissões. Clientes incluem clubes de futebol, agências e marcas por todo o Portugal."
+    },
+    "teaching": {
+      "name": "Ensino",
+      "description": "Tutor de Git e React. Orientei mulheres a entrar no mundo da tecnologia. Guiei estudantes no desenvolvimento de SPAs e ajudei outros a iniciar ou melhorar as suas carreiras em tech em aula."
+    }
+  },
+  "experience": {
+    "title": "Experiência",
+    "subtitle": "Trabalho para Clientes",
+    "period": "Período",
+    "role": "Cargo",
+    "impact": "Impacto",
+    "stack": "Stack",
+    "present": "Presente",
+    "projects": {
+      "project1": {
+        "client": "Empresa de Energia Finlandesa",
+        "company": "Futurice",
+        "role": "Front End Developer",
+        "startDate": "2025/10",
+        "endDate": null,
+        "description": "Ferramenta interna de LLM com chat, gráficos, gestão de histórico de threads, filtragem de base de conhecimento e funcionalidades de partilha entre utilizadores.",
+        "impact": "Reconstruí a interface da ferramenta interna de LLM para um grande player de energia nos países nórdicos como único developer Front End.",
+        "stack": ["React", "TypeScript", "Tailwind CSS", "Claude Code", "Shadcn", "Vega", "OAuth Google"]
+      },
+      "project2": {
+        "client": "Grande Equipa de Ciclismo Profissional",
+        "company": "Futurice",
+        "role": "Front End Developer",
+        "startDate": "2025/11",
+        "endDate": "2026/03",
+        "description": "Construção do MVP para uma ferramenta digital inovadora para uma grande equipa de ciclismo que compete no Tour de France, apoiada por uma grande empresa de tecnologia e bebidas.",
+        "impact": "Desenvolvi várias funcionalidades, incluindo interações com mapas e gráficos para planeamento de corridas, assim como outras funcionalidades, para reformular o trabalho de preparação da equipa de ciclismo.",
+        "stack": ["React", "TypeScript", "Tailwind CSS", "Tanstack", "Next.js", "Storybook", "Leaflet", "D3.js"]
+      },
+      "project3": {
+        "client": "Maior Agência de Notícias do Mundo",
+        "company": "Futurice",
+        "role": "Sub Líder de Equipa & Front End Developer",
+        "startDate": "2024/08",
+        "endDate": "2025/09",
+        "description": "Migração de plataforma para Next.js num ambiente exigente e focado em qualidade de código. Trabalhei como sub líder de equipa, liderei reuniões regularmente e construí o processo de testes Playwright para a nova stack. Arquitetura domain-driven development.",
+        "impact": "Ajudei a liderar a equipa e tomei as rédeas quando necessário, construí infraestrutura de testes de raiz e contribuí para uma plataforma usada por jornalistas em todo o mundo.",
+        "stack": ["Next.js", "TypeScript", "Azure", "Playwright", "SonarQube"]
+      },
+      "project4": {
+        "client": "E-Commerce para um Gigante Automóvel",
+        "company": "KWAN",
+        "role": "Front End Developer",
+        "startDate": "2024/01",
+        "endDate": "2024/07",
+        "description": "Projeto internacional para um líder de mercado em Portugal e Alemanha. Melhoria de uma aplicação avançada em Next.js, construção de testes unitários e participação em pipelines de deployment para staging e produção.",
+        "impact": "Entreguei funcionalidades e correções de bugs para um produto usado diariamente por milhares de pessoas em dois países.",
+        "stack": ["React", "TypeScript", "Next.js", "Jest", "AWS"]
+      },
+      "project5": {
+        "client": "Plataforma de Segurança e Proteção de Dispositivos",
+        "company": "KWAN",
+        "role": "Front End Developer",
+        "startDate": "2021/10",
+        "endDate": "2022/05",
+        "description": "Projeto internacional e assíncrono com equipas em diferentes fusos horários. Lançamento de novos conjuntos de funcionalidades, correção de bugs e refatoração de um módulo grande para melhor extensibilidade.",
+        "impact": "Liderei reuniões de equipa e melhorei dinâmicas do grupo. Implementei refatorações e limpei a codebase. Contrato renovado durante vagas de lay-offs devido ao meu desempenho e contribuição.",
+        "stack": ["React", "TypeScript", "Redux", "Jenkins", "GitHub"]
+      },
+      "project6": {
+        "client": "Plataforma de eSourcing e eProcurement",
+        "company": "KWAN",
+        "role": "Front End Developer",
+        "startDate": "2021/08",
+        "endDate": "2022/09",
+        "description": "Criação de app desktop para melhorar mecanismos de tradução usando i18n. Início de testes Jest, contribuição para a biblioteca de componentes React e participação na adoção de metodologia Scrum.",
+        "impact": "Papel significativo na melhoria do espírito de equipa e na transição da empresa para práticas modernas de desenvolvimento.",
+        "stack": ["React", "TypeScript", "Redux", "Jest", "Vue.js"]
+      },
+      "project7": {
+        "client": "Plataforma de Gestão de Email",
+        "company": "KWAN",
+        "role": "Front End Developer",
+        "startDate": "2021/02",
+        "endDate": "2021/08",
+        "description": "Equipa de 4 developers, a construir de raiz num ambiente Ágil. Trabalho com JWT tokens, AWS S3 buckets, integração REST API e construção de Hooks customizados para componentes mais limpos.",
+        "impact": "Contribuí para o MVP e funcionalidades seguintes. Construção de componentes reutilizáveis e Hooks customizados que reduziram a complexidade dos componentes em todo o codebase.",
+        "stack": ["React", "TypeScript", "Redux", "Jest", "Node.js"]
+      },
+      "project8": {
+        "client": "Plataforma Internacional de Seguros",
+        "company": "Deloitte",
+        "role": "Full Stack Developer",
+        "startDate": "2020/02",
+        "endDate": "2021/02",
+        "description": "Desenvolvimento de novas funcionalidades end-to-end. Escrita de scripts SQL, manutenção de módulo Front End em Ext JS e adição de funcionalidades como paginação e validações extensivas.",
+        "impact": "Melhorei e fui responsável pelo módulo front end na minha primeira experiência profissional. Ganhei confiança como full-stack, trabalhando em front end, back end e base de dados.",
+        "stack": ["Ext JS", "JavaScript", "SQL", "C#", "Azure"]
+      }
+    }
+  },
+  "pedro26": {
+    "title": "PEDRO26",
+    "subtitle": "Estúdio de Ilustração Desportiva",
+    "description": "A PEDRO26 é o meu projeto de paixão de ilustração desportiva. Crio arte relacionada com futebol e desporto. Maioritariamente merchandise, mas também faço comissões personalizadas. Faço t-shirts, sweatshirts, prints, autocolantes e mais. Mais de 700 clientes satisfeitos por todo o mundo, desde adeptos individuais a clubes de futebol e agências.",
+    "commissions": "Comissões Personalizadas",
+    "commissionsDesc": "Ilustrações personalizadas feitas por encomenda. Retratos, peças de ação, posts para redes sociais e arte tangível como capas de vinil.",
+    "merch": "Merchandise",
+    "merchDesc": "Designs originais impressos em t-shirts, sweatshirts, prints e autocolantes. Arte do futebol para vestir.",
+    "cta": "Visitar pedro26.pt",
+    "ctaUrl": "https://pedro26.pt"
+  },
+  "teachingSection": {
+    "title": "Ensino",
+    "subtitle": "Partilhar Conhecimento",
+    "description": "Como irmão mais velho, filho de dois professores, tenho prazer em partilhar conhecimento. Tive o privilégio de orientar estudantes e aspirantes a developers, ajudando-os a ganhar confiança e competências em tecnologia.",
+    "raparigas": {
+      "name": "As Raparigas do Código",
+      "description": "Mentoria de mulheres a entrar no mundo tech através de workshops. Ajudar a construir confiança e competências práticas para os primeiros passos na indústria."
+    },
+    "edit": {
+      "name": "EDIT — Disruptive Digital Education",
+      "description": "Ensino de desenvolvimento front end (focado em Git e React), orientação de estudantes no desenvolvimento de SPAs, ferramentas modernas e workflows de projetos reais."
+    },
+    "talk": {
+      "title": "Talk KWAN: Ensino em Tech",
+      "description": "Uma talk que dei na KWAN sobre ensino, mentoria e porque é que dar de volta à comunidade importa."
+    }
+  },
+  "beyondthecode": {
+    "title": "Para Além do Código",
+    "subtitle": "Fora de Horas",
+    "items": {
+      "football": {
+        "name": "Futebol",
+        "description": "Adepto do Caldas Sport Clube, o clube da minha terra. O futebol é mais do que um desporto para mim! Futebol é comunidade, identidade e a origem de muita da minha arte."
+      },
+      "travel": {
+        "name": "Viagens",
+        "description": "Adoro explorar sítios novos, conhecer pessoas de diferentes origens e experienciar como outras culturas vivem. Cada viagem muda a forma como vejo o mundo e como programo e desenho para ele."
+      },
+      "sports": {
+        "name": "Desporto",
+        "description": "Estou sempre disponível para jogar futebol, ir ao ginásio ou experimentar um desporto novo. Super competitivo em tudo, até em jogos de tabuleiro."
+      },
+      "people": {
+        "name": "Família & Amigos",
+        "description": "A vida é melhor quando estás rodeado das pessoas de quem gostas."
+      }
+    }
+  },
+  "footer": {
+    "scroll": "FUTEBOL • TECNOLOGIA • ARTE • EMOÇÃO • CALDAS SC • CÓDIGO • ILUSTRAÇÃO • CONEXÃO • ENSINO •",
+    "rights": "Todos os direitos reservados.",
+    "builtWith": "Construído com Next.js, TypeScript & Claude Code"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Entra em Contacto",
+    "cta": "Vamos conectar"
+  },
+  "notFound": {
+    "code": "404",
+    "heading": "Desculpa, ainda não construí esta página.",
+    "description": "A página que procuras não existe ou foi movida.",
+    "backHome": "Voltar ao início"
+  }
+}

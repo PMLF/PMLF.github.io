@@ -1,0 +1,23 @@
+# Pedro Fonseca
+
+> Front end developer, sports illustrator (PEDRO26), and tech teacher based in Portugal.
+
+## About
+
+Pedro Fonseca is a senior front end developer with consulting experience for clients world-wide. He specializes in React, TypeScript, and Next.js. He has worked with companies including Futurice, KWAN, and Deloitte on projects spanning energy, automotive, cybersecurity, procurement, and professional cycling.
+
+He is also the founder of PEDRO26, a sports illustration brand with 700+ clients worldwide, who has taught as a teacher and mentor in the Portuguese tech community.
+
+## Links
+
+- Portfolio: https://pedrofonseca.dev
+- LinkedIn: https://linkedin.com/in/pedromlfonseca
+- GitHub: https://github.com/PMLF
+- Illustration brand: https://pedro26.pt
+- Email: pedro@pedro26.pt
+
+## Skills
+
+- Front end: React, TypeScript, Next.js, JavaScript, HTML, CSS, Tailwind CSS
+- Tools: Git, Figma, Adobe Illustrator, Procreate
+- Languages: Portuguese (native), English (fluent)

@@ -1,0 +1,204 @@
+{
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "experience": "Experience",
+    "art": "Art",
+    "teaching": "Teaching",
+    "beyond": "Beyond the Code",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Tech. Art. Feeling."
+  },
+  "roles": {
+    "frontend": "Front End Developer",
+    "teacher": "Teacher",
+    "founder": "Founder",
+    "illustrator": "Sports Illustrator"
+  },
+  "about": {
+    "title": "About",
+    "bio": "Passionate for clean code, art and football. I've been consulting for {years}+ years and making art for {artYears}+ years. I bring energy, adaptability and attention to detail to every project I work at.",
+    "philosophy": "Philosophy",
+    "philosophyText": "I care about how a product feels and how a user can connect with it, not just that it works. I leverage AI in my workflow, not as a crutch, to help me increase productivity and catch edge cases earlier.",
+    "stats": {
+      "years": "Years of Experience",
+      "clients": "Clients",
+      "sectors": "Sectors"
+    }
+  },
+  "work": {
+    "title": "What I Do",
+    "subtitle": "Areas of Work",
+    "software": {
+      "name": "Software Development",
+      "description": "Building performant, accessible, and beautiful web applications with React, TypeScript, and Next.js. From e-commerce platforms used by thousands daily to security tools protecting millions of devices and internal enterprise LLM platforms used by thousands of users to improve their work."
+    },
+    "illustrations": {
+      "name": "Illustrations",
+      "description": "Self-taught sports illustrator with over 700 happy customers. Football art, merchandise, and client commissions. Clients include football clubs, agencies, and brands across Portugal."
+    },
+    "teaching": {
+      "name": "Teaching",
+      "description": "Git and React tutor. Mentored women getting into tech. Guided students through SPA development and helped others start or improve their tech careers in class."
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Client Work",
+    "period": "Period",
+    "role": "Role",
+    "impact": "Impact",
+    "stack": "Stack",
+    "present": "Present",
+    "projects": {
+      "project1": {
+        "client": "Finnish Energy Company",
+        "company": "Futurice",
+        "role": "Front End Developer",
+        "startDate": "2025/10",
+        "endDate": null,
+        "description": "Internal LLM tool with chat, charts, thread history management, knowledge base filtering and sharing capabilities between users.",
+        "impact": "Rebuilt internal LLM tool's interface for a big energy player in the Nordics as the sole Front End developer.",
+        "stack": ["React", "TypeScript", "Tailwind CSS", "Claude Code", "Shadcn", "Vega", "OAuth Google"]
+      },
+      "project2": {
+        "client": "Major Pro Cycling Team",
+        "company": "Futurice",
+        "role": "Front End Developer",
+        "startDate": "2025/11",
+        "endDate": "2026/03",
+        "description": "Built the MVP for an innovatice digital tool for a major cycling team competing in the Tour de France, backed by a big tech and drinks company.",
+        "impact": "Developed various features, including maps and charts interactions for race planning, as well as other features, to revamp cycling team's prep-work",
+        "stack": ["React", "TypeScript", "Tailwind CSS", "Tanstack", "Next.js", "Storybook", "Leaflet", "D3.js"]
+      },
+      "project3": {
+        "client": "World's Largest News Agency",
+        "company": "Futurice",
+        "role": "Sub Team Leader & Front End Developer",
+        "startDate": "2024/08",
+        "endDate": "2025/09",
+        "description": "Platform migration to Next.js in a highly demanding, code-quality-first environment. Worked as sub team leader, ran meetings regularly, and built the Playwright testing process for the new stack. Domain-driven development architecture.",
+        "impact": "Helped leading the team and stepped in when needed, built testing infrastructure from scratch, and helped deliver a platform used by journalists worldwide.",
+        "stack": ["Next.js", "TypeScript", "Azure", "Playwright", "SonarQube"]
+      },
+      "project4": {
+        "client": "E-Commerce for an Automobile Giant",
+        "company": "KWAN",
+        "role": "Front End Developer",
+        "startDate": "2024/01",
+        "endDate": "2024/07",
+        "description": "International project for a market leader in Portugal and Germany. Improved an advanced Next.js application, built unit tests, and participated in deployment pipelines to staging and production.",
+        "impact": "Delivered features and bug fixes for a product used by thousands of people daily across two countries.",
+        "stack": ["React", "TypeScript", "Next.js", "Jest", "AWS"]
+      },
+      "project5": {
+        "client": "Device Protection Security Platform",
+        "company": "KWAN",
+        "role": "Front End Developer",
+        "startDate": "2021/10",
+        "endDate": "2022/05",
+        "description": "International and asynchronous project with teams across different time zones. Launched important new feature bundles, fixed bugs, and refactored a large module for better extensibility.",
+        "impact": "Ran team meetings and improved team dynamics. Implemented refactors and cleaned up codebase. Contract extended during company layoffs due to my performance and input.",
+        "stack": ["React", "TypeScript", "Redux", "Jenkins", "GitHub"]
+      },
+      "project6": {
+        "client": "eSourcing & eProcurement Platform",
+        "company": "KWAN",
+        "role": "Front End Developer",
+        "startDate": "2021/08",
+        "endDate": "2022/09",
+        "description": "Created a desktop app to improve translation mechanisms using i18n. Jumpstarted Jest testing, contributed to the React component library, and participated in Scrum methodology adoption.",
+        "impact": "Significant role in improving team bonding and the company's transition to modern development practices.",
+        "stack": ["React", "TypeScript", "Redux", "Jest", "Vue.js"]
+      },
+      "project7": {
+        "client": "Email Storage Management Platform",
+        "company": "KWAN",
+        "role": "Front End Developer",
+        "startDate": "2021/02",
+        "endDate": "2021/08",
+        "description": "Dev team of 4, building from scratch in an Agile environment. Worked with JWT tokens, AWS S3 buckets, REST API integration, and built custom Hooks for cleaner components.",
+        "impact": "Contributed towards the MVP and further features. Built reusable components and custom Hooks that reduced component complexity across the codebase.",
+        "stack": ["React", "TypeScript", "Redux", "Jest", "Node.js"]
+      },
+      "project8": {
+        "client": "International Insurance Platform",
+        "company": "Deloitte",
+        "role": "Full Stack Developer",
+        "startDate": "2020/02",
+        "endDate": "2021/02",
+        "description": "Developed new features end-to-end. Wrote SQL scripts, maintained a Front End module in Ext JS, and added features like pagination and extensive input validations.",
+        "impact": "Improved and owned front end module on my first professional experience. Built full-stack confidence across front end, back end, and database layers.",
+        "stack": ["Ext JS", "JavaScript", "SQL", "C#", "Azure"]
+      }
+    }
+  },
+  "pedro26": {
+    "title": "PEDRO26",
+    "subtitle": "Sports Illustration Studio",
+    "description": "PEDRO26 is my sports illustration passion-project. I create football and sports-related art. Mostly merchandise, but I also do personalized commissions. I make t-shirts, sweatshirts, prints, stickers, and more. Over 700 happy clients across the globe, from individual fans to football clubs and agencies.",
+    "commissions": "Custom Commissions",
+    "commissionsDesc": "Personalised illustrations made to order. Portraits, action-packed pieces, social media posts and tangible artwork like vinyl covers",
+    "merch": "Merchandise",
+    "merchDesc": "Original designs printed on t-shirts, sweatshirts, prints, and stickers. Football culture you can wear.",
+    "cta": "Visit pedro26.pt",
+    "ctaUrl": "https://pedro26.pt"
+  },
+  "teachingSection": {
+    "title": "Teaching",
+    "subtitle": "Sharing Knowledge",
+    "description": "As an older brother, son of two teachers, sharing knowledge is something I enjoy. I've had the privilege of mentoring students and aspiring developers, helping them build confidence and skills in tech.",
+    "raparigas": {
+      "name": "As Raparigas do Código",
+      "description": "Mentoring women getting into tech through workshops. Helping build confidence and practical skills for their first steps in the industry."
+    },
+    "edit": {
+      "name": "EDIT — Disruptive Digital Education",
+      "description": "Teaching front end development (focused on Git and React), guiding students through SPA development, modern tooling, and real-world project workflows."
+    },
+    "talk": {
+      "title": "KWAN Talk: Teaching in Tech",
+      "description": "A talk I gave at KWAN about teaching, mentoring, and why giving back to the community matters."
+    }
+  },
+  "beyondthecode": {
+    "title": "Beyond the Code",
+    "subtitle": "Off the Clock",
+    "items": {
+      "football": {
+        "name": "Football",
+        "description": "Fan of Caldas Sport Clube, the club from my hometown. Football is more than a sport to me! Football is community, identity, and where a lot of my art comes from."
+      },
+      "travel": {
+        "name": "Travelling",
+        "description": "I love exploring new places, meeting people from different backgrounds, and experiencing how other cultures live. Every trip changes how I see the world and how I code and design for it."
+      },
+      "sports": {
+        "name": "Sports",
+        "description": "I'm always up for playing football, hitting the gym, or trying a new sport. Super competitive in everything, even board games."
+      },
+      "people": {
+        "name": "Family & Friends",
+        "description": "Life is best when you're surrounded by the people you care about."
+      }
+    }
+  },
+  "footer": {
+    "scroll": "FOOTBALL • TECH • ART • FEELING • CALDAS SC • CODE • ILLUSTRATION • CONNECTION • TEACHING •",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, TypeScript & Claude Code"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch",
+    "cta": "Let's connect"
+  },
+  "notFound": {
+    "code": "404",
+    "heading": "Sorry, I haven't built this page yet.",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back home"
+  }
+}
