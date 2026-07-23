@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pmlf.github.io/sitemap.xml
-LLMs: https://pmlf.github.io/llms.txt
+Sitemap: https://pedrofonseca.dev/sitemap.xml
+LLMs: https://pedrofonseca.dev/llms.txt

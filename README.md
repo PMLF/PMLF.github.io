@@ -2,7 +2,7 @@
 
 Personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion. Single-page, bilingual (PT/EN), editorial design with dark theme.
 
-**Live at:** [pedrofonseca.dev](https://pmlf.github.io)
+**Live at:** [pedrofonseca.dev](https://pedrofonseca.dev)
 
 ## Stack
 

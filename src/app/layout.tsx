@@ -31,14 +31,14 @@ export const metadata: Metadata = {
     "Futurice",
     "freelance illustrator",
   ],
-  authors: [{ name: "Pedro Fonseca", url: "https://pmlf.github.io" }],
+  authors: [{ name: "Pedro Fonseca", url: "https://pedrofonseca.dev" }],
   creator: "Pedro Fonseca",
-  metadataBase: new URL("https://pmlf.github.io"),
+  metadataBase: new URL("https://pedrofonseca.dev"),
   openGraph: {
     title: "Pedro Fonseca | Front End Developer & Sports Illustrator",
     description:
       "Front end developer with 6+ years of consulting experience across Europe. Sports illustrator with 700+ clients. Teacher. Based in Portugal.",
-    url: "https://pmlf.github.io",
+    url: "https://pedrofonseca.dev",
     siteName: "Pedro Fonseca",
     type: "website",
     locale: "en_US",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://pmlf.github.io",
+    canonical: "https://pedrofonseca.dev",
   },
   icons: {
     icon: "/icon.png",
@@ -76,13 +76,13 @@ const jsonLd = {
     {
       "@type": "WebSite",
       name: "Pedro Fonseca",
-      url: "https://pmlf.github.io",
+      url: "https://pedrofonseca.dev",
       inLanguage: ["en", "pt"],
     },
     {
       "@type": "Person",
       name: "Pedro Fonseca",
-      url: "https://pmlf.github.io",
+      url: "https://pedrofonseca.dev",
       jobTitle: "Front End Developer",
       knowsAbout: [
         "React",

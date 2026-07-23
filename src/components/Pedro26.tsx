@@ -98,12 +98,11 @@ export default function Pedro26() {
                 onClick={() => setLightboxSrc(src)}
               >
                 <Image
-                  key={src}
                   src={src}
                   alt={`PEDRO26 illustration ${i + 1}`}
                   width={400}
                   height={300}
-                  className="w-full h-full object-cover animate-[fadeIn_0.8s_ease-out]"
+                  className="w-full h-full object-cover"
                 />
               </button>
             ))}

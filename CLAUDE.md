@@ -4,7 +4,7 @@ Instructions for AI agents working on this codebase.
 
 ## Project overview
 
-Personal portfolio website for Pedro Fonseca — front-end developer, sports illustrator (PEDRO26), and tech teacher. Single-page, bilingual (PT/EN), statically exported to GitHub Pages at `pmlf.github.io`.
+Personal portfolio website for Pedro Fonseca — front-end developer, sports illustrator (PEDRO26), and tech teacher. Single-page, bilingual (PT/EN), statically exported to GitHub Pages at `pedrofonseca.dev`.
 
 ## Tech stack
 
