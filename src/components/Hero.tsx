@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useI18n } from "@/i18n/context";
 import Image from "next/image";
 
-const INTERVAL = 3000;
+const INTERVAL = 1200;
 const SLOT_H = 44;
 
 export default function Hero() {
