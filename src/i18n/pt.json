@@ -9,7 +9,7 @@
     "contact": "Contacto"
   },
   "hero": {
-    "tagline": "Tecnologia. Arte. Emoção."
+    "tagline": "Tecnologia. Arte. Futebol."
   },
   "roles": {
     "frontend": "Front End Developer",
@@ -186,7 +186,7 @@
     }
   },
   "footer": {
-    "scroll": "FUTEBOL • TECNOLOGIA • ARTE • EMOÇÃO • CALDAS SC • CÓDIGO • ILUSTRAÇÃO • CONEXÃO • ENSINO •",
+    "scroll": "FUTEBOL • TECNOLOGIA • ARTE • CALDAS SC • CÓDIGO • ILUSTRAÇÃO • CONEXÃO • ENSINO •",
     "rights": "Todos os direitos reservados.",
     "builtWith": "Construído com Next.js, TypeScript & Claude Code"
   },

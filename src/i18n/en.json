@@ -9,7 +9,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "tagline": "Tech. Art. Feeling."
+    "tagline": "Tech. Art. Football."
   },
   "roles": {
     "frontend": "Front End Developer",
@@ -186,7 +186,7 @@
     }
   },
   "footer": {
-    "scroll": "FOOTBALL • TECH • ART • FEELING • CALDAS SC • CODE • ILLUSTRATION • CONNECTION • TEACHING •",
+    "scroll": "FOOTBALL • TECH • ART • CALDAS SC • CODE • ILLUSTRATION • CONNECTION • TEACHING •",
     "rights": "All rights reserved.",
     "builtWith": "Built with Next.js, TypeScript & Claude Code"
   },
