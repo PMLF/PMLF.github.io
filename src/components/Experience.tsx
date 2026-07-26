@@ -40,78 +40,90 @@ function ProjectCard({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 20 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      initial={{ opacity: 0, x: -20 }}
+      animate={inView ? { opacity: 1, x: 0 } : {}}
       transition={{ delay: index * 0.06, duration: 0.5 }}
-      role="button"
-      tabIndex={0}
-      aria-expanded={expanded}
-      className={`group cursor-pointer ${isLast ? "" : "border-b border-white/10"}`}
-      onClick={() => setExpanded(!expanded)}
-      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setExpanded(!expanded); } }}
+      className="relative pl-8 sm:pl-10"
     >
-      <div className="flex items-center gap-4 sm:gap-8 py-6">
-        <span className="text-[11px] tracking-[0.2em] text-amber-500 font-mono shrink-0 w-6">
-          {String(index + 1).padStart(2, "0")}
-        </span>
+      <div className="absolute left-0 top-0 bottom-0 w-px bg-amber-500/15" aria-hidden="true" />
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={inView ? { scale: 1 } : {}}
+        transition={{ delay: index * 0.06 + 0.2, duration: 0.3 }}
+        className="absolute left-[-3px] top-8 w-[7px] h-[7px] rounded-full bg-amber-500/60 ring-2 ring-neutral-950"
+        aria-hidden="true"
+      />
+      {isLast && (
+        <div className="absolute left-0 bottom-0 w-px h-1/2 bg-neutral-950" aria-hidden="true" />
+      )}
 
-        <div className="flex-1 min-w-0">
-          <h3 className="text-sm sm:text-base font-semibold text-white group-hover:text-amber-500 transition-colors duration-300">
-            {project.client}
-          </h3>
-          <p className="text-[11px] tracking-[0.15em] text-amber-500 mt-0.5">
-            {project.company}
-          </p>
+      <div
+        role="button"
+        tabIndex={0}
+        aria-expanded={expanded}
+        className={`group cursor-pointer py-6 ${isLast ? "" : "border-b border-white/[0.06]"}`}
+        onClick={() => setExpanded(!expanded)}
+        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setExpanded(!expanded); } }}
+      >
+        <div className="flex items-center gap-4 sm:gap-8">
+          <div className="flex-1 min-w-0">
+            <h3 className="text-sm sm:text-base font-semibold text-white group-hover:text-amber-500 transition-colors duration-300">
+              {project.client}
+            </h3>
+            <p className="text-[11px] tracking-[0.15em] text-amber-500 mt-0.5">
+              {project.company}
+            </p>
+          </div>
+
+          <span className="text-[11px] tracking-[0.15em] text-neutral-400 hidden sm:block font-mono">
+            {period}
+          </span>
+
+          <motion.span
+            animate={{ rotate: expanded ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="text-neutral-500 text-[10px] shrink-0"
+          >
+            ▼
+          </motion.span>
         </div>
 
-        <span className="text-[11px] tracking-[0.15em] text-white hidden sm:block font-mono">
-          {period}
-        </span>
+        {expanded && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            className="pt-5 pr-4"
+          >
+            <p className="text-[11px] tracking-[0.15em] text-neutral-400 font-mono mb-4 sm:hidden">
+              {period}
+            </p>
 
-        <motion.span
-          animate={{ rotate: expanded ? 180 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="text-white text-[10px] shrink-0"
-        >
-          ▼
-        </motion.span>
+            <p className="text-sm text-neutral-300 leading-[1.8] mb-5 max-w-2xl">
+              {project.description}
+            </p>
+
+            <div className="mb-5">
+              <p className="text-[11px] tracking-[0.4em] uppercase text-amber-500 mb-2">
+                {t.experience.impact}
+              </p>
+              <p className="text-sm text-neutral-300 leading-[1.8] max-w-2xl">
+                {project.impact}
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {project.stack.map((tech) => (
+                <span
+                  key={tech}
+                  className="text-[11px] tracking-wider px-3 py-1.5 bg-amber-500/[0.08] border border-amber-500/20 text-amber-200 rounded-sm"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        )}
       </div>
-
-      {expanded && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="pb-8 pl-10 sm:pl-14 pr-4"
-        >
-          <p className="text-[11px] tracking-[0.15em] text-white font-mono mb-4 sm:hidden">
-            {period}
-          </p>
-
-          <p className="text-sm text-white leading-[1.8] mb-5 max-w-2xl">
-            {project.description}
-          </p>
-
-          <div className="mb-5">
-            <p className="text-[11px] tracking-[0.4em] uppercase text-amber-500 mb-2">
-              {t.experience.impact}
-            </p>
-            <p className="text-sm text-white leading-[1.8] max-w-2xl">
-              {project.impact}
-            </p>
-          </div>
-
-          <div className="flex flex-wrap gap-2">
-            {project.stack.map((tech) => (
-              <span
-                key={tech}
-                className="text-[11px] tracking-wider px-3 py-1.5 bg-white/[0.06] border border-white/10 text-white rounded-sm"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </motion.div>
-      )}
     </motion.div>
   );
 }

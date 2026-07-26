@@ -33,15 +33,15 @@
     "subtitle": "Áreas de Trabalho",
     "software": {
       "name": "Desenvolvimento de Software",
-      "description": "Construção de aplicações web performantes, acessíveis e bonitas com React, TypeScript e Next.js. Já fiz desde plataformas e-commerce usadas diariamente por milhares de utilizadores a ferramentas de segurança que protegem milhões de dispositivos e plataformas internas de LLM empresariais."
+      "description": "Construção de aplicações web performantes, acessíveis e intuitivas com React, TypeScript e Next.js. Já construí desde plataformas e-commerce usadas diariamente por milhares de utilizadores a ferramentas de segurança que protegem milhares de dispositivos e plataformas LLM internas empresariais."
     },
     "illustrations": {
       "name": "Ilustrações",
-      "description": "Ilustrador desportivo autodidata com mais de 700 clientes satisfeitos. Arte de futebol, merchandise e comissões. Clientes incluem clubes de futebol, agências e marcas por todo o Portugal."
+      "description": "Ilustrador desportivo autodidata com mais de 700 clientes satisfeitos. Arte de futebol, merchandise e comissões. Já trabalhei com clubes de futebol como o Caldas SC e o Boavista e empresas."
     },
     "teaching": {
       "name": "Ensino",
-      "description": "Tutor de Git e React. Orientei mulheres a entrar no mundo da tecnologia. Guiei estudantes no desenvolvimento de SPAs e ajudei outros a iniciar ou melhorar as suas carreiras em tech em aula."
+      "description": "Tutor de Git e React. Dei aulas a alunos sobre o desenvolvimento de SPAs e ajudei-os a iniciar ou melhorar as suas carreiras na área tecnológica."
     }
   },
   "experience": {
@@ -137,7 +137,7 @@
   },
   "pedro26": {
     "title": "PEDRO26",
-    "subtitle": "Estúdio de Ilustração Desportiva",
+    "subtitle": "Ilustrações Desportivas",
     "description": "A PEDRO26 é o meu projeto de paixão de ilustração desportiva. Crio arte relacionada com futebol e desporto. Maioritariamente merchandise, mas também faço comissões personalizadas. Faço t-shirts, sweatshirts, prints, autocolantes e mais. Mais de 700 clientes satisfeitos por todo o mundo, desde adeptos individuais a clubes de futebol e agências.",
     "commissions": "Comissões Personalizadas",
     "commissionsDesc": "Ilustrações personalizadas feitas por encomenda. Retratos, peças de ação, posts para redes sociais e arte tangível como capas de vinil.",
@@ -192,8 +192,8 @@
   },
   "contact": {
     "title": "Contacto",
-    "subtitle": "Entra em Contacto",
-    "cta": "Vamos conectar"
+    "subtitle": "Envia uma mensagem ou email",
+    "cta": "Entra em contacto"
   },
   "notFound": {
     "code": "404",

@@ -33,15 +33,15 @@
     "subtitle": "Areas of Work",
     "software": {
       "name": "Software Development",
-      "description": "Building performant, accessible, and beautiful web applications with React, TypeScript, and Next.js. From e-commerce platforms used by thousands daily to security tools protecting millions of devices and internal enterprise LLM platforms used by thousands of users to improve their work."
+      "description": "Building performant, accessible, and intuitive web applications with React, TypeScript, and Next.js. From e-commerce platforms used by thousands daily to security tools protecting thousands of devices and internal enterprise LLM platforms."
     },
     "illustrations": {
       "name": "Illustrations",
-      "description": "Self-taught sports illustrator with over 700 happy customers. Football art, merchandise, and client commissions. Clients include football clubs, agencies, and brands across Portugal."
+      "description": "Self-taught sports illustrator with over 700 happy customers. Football art, merchandise, and client commissions. Clients include football clubs like Caldas SC and Boavista and companies."
     },
     "teaching": {
       "name": "Teaching",
-      "description": "Git and React tutor. Mentored women getting into tech. Guided students through SPA development and helped others start or improve their tech careers in class."
+      "description": "Git and React tutor. Gave classes to students about SPA development and helped them start or improve their tech careers."
     }
   },
   "experience": {
@@ -137,7 +137,7 @@
   },
   "pedro26": {
     "title": "PEDRO26",
-    "subtitle": "Sports Illustration Studio",
+    "subtitle": "Sports Illustrations",
     "description": "PEDRO26 is my sports illustration passion-project. I create football and sports-related art. Mostly merchandise, but I also do personalized commissions. I make t-shirts, sweatshirts, prints, stickers, and more. Over 700 happy clients across the globe, from individual fans to football clubs and agencies.",
     "commissions": "Custom Commissions",
     "commissionsDesc": "Personalised illustrations made to order. Portraits, action-packed pieces, social media posts and tangible artwork like vinyl covers",

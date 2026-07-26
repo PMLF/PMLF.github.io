@@ -2,7 +2,6 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
 import { useI18n } from "@/i18n/context";
 
 const links = [
@@ -17,35 +16,21 @@ export default function Contact() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="contact" className="relative z-10 py-32 sm:py-40 px-6">
-      <div className="max-w-5xl mx-auto rounded-2xl bg-white/[0.03] backdrop-blur-md border border-white/[0.06] p-8 sm:p-12 md:p-16">
+    <section id="contact" className="relative z-10 py-40 sm:py-52 px-6">
+      <div className="max-w-4xl mx-auto">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
-          <p className="text-[11px] tracking-[0.5em] uppercase text-amber-500 mb-6">
+          <p className="text-[11px] tracking-[0.5em] uppercase text-amber-500 mb-8">
             {t.contact.title}
           </p>
 
-          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-20 mb-16">
-            <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight flex-1">
-              {t.contact.cta}
-            </h2>
-
-            <div className="flex-shrink-0">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-neutral-800 border border-white/10 overflow-hidden">
-                <Image
-                  src="/images/connect.png"
-                  alt="Pedro Fonseca"
-                  width={160}
-                  height={160}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+          <h2 className="text-5xl sm:text-7xl md:text-8xl font-black text-white tracking-tight mb-20 leading-[0.9]">
+            {t.contact.cta}
+          </h2>
 
           <div className="flex flex-col sm:flex-row gap-12 sm:gap-20">
             {links.map((link, i) => (
