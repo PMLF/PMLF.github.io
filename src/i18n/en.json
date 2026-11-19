@@ -5,6 +5,7 @@
     "experience": "Experience",
     "art": "Art",
     "teaching": "Teaching",
+    "writing": "Writing",
     "beyond": "Beyond the Code",
     "contact": "Contact"
   },
@@ -163,6 +164,37 @@
       "description": "A talk I gave at KWAN about teaching, mentoring, and why giving back to the community matters."
     }
   },
+  "writing": {
+    "title": "Writing",
+    "subtitle": "Putting It in Words",
+    "description": "Beyond code and illustration, I also enjoy writing about tech and football. From technical articles for KWAN's blog to local sports journalism. I also translated several KWAN articles from Portuguese to English.",
+    "items": {
+      "kwanOpenSource": {
+        "name": "Open Source: The Guide to Contributing and Benefiting",
+        "description": "A guide about how anyone can contribute to open source projects, regardless of experience. Covers the benefits, how to find beginner-friendly issues on GitHub, and the contribution workflow.",
+        "cta": "Read article",
+        "url": "https://www.kwan.com/pt/blog/open-source-o-guia-para-contribuir-e-beneficiar-com-esta-forma-de-colaboracao",
+        "publisher": "KWAN Blog",
+        "date": "2022",
+        "language": "PT"
+      },
+      "kwanGithub": {
+        "name": "GitHub: Learn How to Showcase Your Developer Talents",
+        "description": "How to use GitHub as a developer portfolio. Covers pinning projects, the contribution graph, profile READMEs, GitHub Pages, and community engagement.",
+        "cta": "Read article",
+        "url": "https://www.kwan.com/blog/github-learn-how-to-showcase-your-developer-talents",
+        "publisher": "KWAN Blog",
+        "date": "2024",
+        "language": "EN"
+      },
+      "ajo": {
+        "name": "Local Football Journalism",
+        "description": "For about a year, I wrote match reports and articles about Caldas SC and SCU Torreense for the AJO (Associação de Jovens do Oeste) local newspaper, covering the football scene of my region.",
+        "publisher": "AJO — Associação de Jovens do Oeste",
+        "date": "2021"
+      }
+    }
+  },
   "beyondthecode": {
     "title": "Beyond the Code",
     "subtitle": "Off the Clock",
@@ -186,7 +218,7 @@
     }
   },
   "footer": {
-    "scroll": "FOOTBALL • TECH • ART • CALDAS SC • CODE • ILLUSTRATION • CONNECTION • TEACHING •",
+    "scroll": "FOOTBALL • TECH • ART • CALDAS SC • CODE • ILLUSTRATION • WRITING • CONNECTION • TEACHING •",
     "rights": "All rights reserved.",
     "builtWith": "Built with Next.js, TypeScript & Claude Code"
   },

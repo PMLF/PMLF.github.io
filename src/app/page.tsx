@@ -5,6 +5,7 @@ import Work from "@/components/Work";
 import Experience from "@/components/Experience";
 import Pedro26 from "@/components/Pedro26";
 import TeachingSection from "@/components/TeachingSection";
+import WritingSection from "@/components/WritingSection";
 import BeyondTheCode from "@/components/BeyondTheCode";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -21,6 +22,7 @@ export default function Home() {
         <Experience />
         <Pedro26 />
         <TeachingSection />
+        <WritingSection />
         <BeyondTheCode />
         <Contact />
       </main>
